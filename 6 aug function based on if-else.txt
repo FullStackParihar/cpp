@@ -1,0 +1,172 @@
+1.
+#include<bits/stdc++.h>
+
+
+ using namespace std;
+
+ string evenodd(int b)
+ {    string d;
+       if(b%2==0){
+      d="even";
+      return d;
+ }
+ 
+ else{
+      d="odd";
+      return d;
+     }
+     
+     
+ }    
+ 
+int main(){
+  
+  int a; 
+  string c;
+cout<<"enter a number\n"; 
+ cin>> a;
+ cout<< "number is:" <<a<<"\n";
+ 
+c= evenodd(a);
+
+cout<<"number is "<<c;
+
+return 0;
+
+ 
+}
+
+
+2.
+#include<bits/stdc++.h>
+
+
+ using namespace std;
+
+ string persentage(int a)
+ {    
+       if(a>=90){
+     
+      return "A";
+ }
+ 
+ else if(a>=60){
+
+      return "B";
+     }
+     
+     else if(a>=30){
+
+      return "c";
+     }
+     else 
+     return "fail";
+     
+ }  
+    
+ 
+int main(){
+  
+  int a; 
+  string c;
+cout<<"enter your persentage:\n"; 
+ cin>> a;
+ cout<< "your persentage is:" <<a<<"\n";
+ 
+c= persentage(a);
+
+cout<<"your grade is: "<<c;
+
+return 0;
+
+ 
+}
+
+
+3.
+#include<bits/stdc++.h>
+
+
+ using namespace std;
+
+ string year(int a)
+ {    
+       if(a%4==0){
+     
+      return "leap year";
+ }
+ 
+ else{
+
+      return "not leap year";
+ }
+     
+     return "invalid";
+     
+ }  
+    
+ 
+int main(){
+  
+  int a; 
+  string c;
+cout<<"enter the year:\n"; 
+ cin>> a;
+ cout<< "your enterd yesr is:" <<a<<"\n";
+ 
+c= year(a);
+
+cout<<"this is a: "<<c;
+
+return 0;
+
+ 
+}
+
+
+4.
+#include<bits/stdc++.h>
+
+
+ using namespace std;
+
+ string triangle(int a,int b, int c)
+ {    
+       if((a<90 && b<90 && c<90)&&a+b+c==180){
+     
+      return "acute";
+ }
+ 
+ else if((a==90 || b==90 || c==90)&&a+b+c==180){
+
+      return "right-angled";
+ }
+ 
+ else if((a>90 || b>90 || c>90 )&&a+b+c==180){
+
+      return "obtuse";
+ }
+    else 
+     return "invalid";
+     
+ }  
+    
+ 
+int main(){
+  
+  int a;
+  int b;
+  int c;
+  string d;
+cout<<"enter three angles:\n"; 
+ cin>> a>>b>>c;
+ cout<< "your enterd yesr is:" <<a<<b<<c<<"\n";
+ 
+d= triangle(a,b,c);
+
+cout<<"this is a: "<<d;
+
+return 0;
+
+ 
+}
