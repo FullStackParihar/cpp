@@ -1,0 +1,182 @@
+1. 15 integer data from user and print them
+
+#include <iostream>
+
+int main() {
+
+    using namespace std;
+    int num1, num2, num3, num4, num5;
+    int num6, num7, num8, num9, num10;
+    int num11, num12, num13, num14, num15;
+
+    
+    cout << "Enter 15 integer:" << endl;
+    cin >> num1 >> num2 >> num3 >> num4 >> num5;
+    cin >> num6 >> num7 >> num8 >> num9 >> num10;
+    cin >> num11 >> num12 >> num13 >> num14 >> num15;
+
+     
+    cout << "15 integer is:" << endl;
+    cout << num1 << " " << num2 << " " << num3 << " " << num4 << " " << num5 << " ";
+    cout << num6 << " " << num7 << " " << num8 << " " << num9 << " " << num10 << " ";
+    cout << num11 << " " << num12 << " " << num13 << " " << num14 << " " << num15 << endl;
+
+    return 0;
+}
+
+2. print Hello myself _______ I am from _____ I have completed btech from ______.
+
+ //print Hello myself _______ I am from _____ I have completed btech from ______.
+
+#include <iostream>
+using namespace std;
+
+int main() {
+     
+ 
+  cout << "Hello myself vishnu I am from pali,rajasthan I have completed bca from vivekananda global university, jaipur";  
+   
+  
+  return 0;
+}
+
+3. sum of a and b using user input 
+  
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+     int a;
+     int b;
+     cout<<"enter the value of a:"<<a;
+     cin>>a;
+     cout<<"enter the value of b:"<<b;
+     cin>>b;
+     int c;
+     c=a+b;
+ 
+  cout<< " sum of a and b is:"<<c;  
+   
+  
+  return 0;
+}
+
+4. sub of a and b karna hai if sub is negative then use math to make it positive.
+#include <iostream>
+
+int main() {
+     
+     using namespace std;
+    int a, b, c;
+  
+    cout << "Enter two integers (a and b):" <<  endl;
+    cin >> a >> b;
+   
+    c = a - b;
+
+    if (c < 0) {
+        c = -c;
+    }
+
+   cout << "The positive result of the subtraction is: " << c << endl;
+
+    return 0;
+}
+
+5. calcualte the average of 5 numbers.
+
+#include <iostream>
+
+int main() {
+    
+    using namespace std;
+    int num1, num2, num3, num4, num5;
+    int sum;
+    double average;
+ 
+    cout << "Enter 5 numbers:" << endl;
+    cin >> num1 >> num2 >> num3 >> num4 >> num5;
+ 
+    sum = num1 + num2 + num3 + num4 + num5;
+ 
+    average = sum / 5.0;
+
+     
+    cout << "The average of the entered integers is: " << average << endl;
+
+    return 0;
+}
+
+
+6. swap the values of a and b
+
+#include <iostream>
+
+int main() {
+
+    using namespace std;
+    int a, b;
+
+  
+    cout << "Enter two integers (a and b):" << endl;
+    cin >> a >> b;
+ 
+     a=a+b;
+     b=a-b;
+     a=a-b;
+     
+ 
+    cout << "After swapping, a = " << a << " and b = " << b << endl;
+
+    return 0;
+}
+
+7. take an input from user and check whether it is positive negative or 0.
+
+#include <iostream>
+
+int main() {
+    
+    using namespace std;
+    int num;
+
+ 
+    cout << "Enter an integer: " << endl;
+    cin >> num;
+
+     
+    if (num > 0) {
+        cout << "The number is positive." << endl;
+    } else if (num < 0) {
+        cout << "The number is negative." << endl;
+    } else {
+        cout << "The number is zero." << endl;
+    }
+
+    return 0;
+}
+
+8. take input from user and check whether it is even or odd.
+
+#include <iostream>
+
+int main() {
+
+    using namespace std;
+    int num;
+
+   
+    cout << "Enter an integer: " << endl;
+    cin >> num;
+
+    
+    if (num % 2 == 0) {
+        cout << "The number is even." << endl;
+    } else {
+        cout << "The number is odd." << endl;
+    }
+
+    return 0;
+}
+

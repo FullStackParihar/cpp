@@ -1,0 +1,890 @@
+1.
+#include<bits/stdc++.h>
+
+
+ using namespace std;
+
+ string evenodd(int b)
+ {    string d;
+       if(b%2==0){
+      d="even";
+      return d;
+ }
+ 
+ else{
+      d="odd";
+      return d;
+     }
+     
+     
+ }    
+ 
+int main(){
+  
+  int a; 
+  string c;
+cout<<"enter a number\n"; 
+ cin>> a;
+ cout<< "number is:" <<a<<"\n";
+ 
+c= evenodd(a);
+
+cout<<"number is "<<c;
+
+return 0;
+
+ 
+}
+
+
+2.
+#include<bits/stdc++.h>
+
+
+ using namespace std;
+
+ string persentage(int a)
+ {    
+       if(a>=90){
+     
+      return "A";
+ }
+ 
+ else if(a>=60){
+
+      return "B";
+     }
+     
+     else if(a>=30){
+
+      return "c";
+     }
+     else 
+     return "fail";
+     
+ }  
+    
+ 
+int main(){
+  
+  int a; 
+  string c;
+cout<<"enter your persentage:\n"; 
+ cin>> a;
+ cout<< "your persentage is:" <<a<<"\n";
+ 
+c= persentage(a);
+
+cout<<"your grade is: "<<c;
+
+return 0;
+
+ 
+}
+
+
+3.
+#include<bits/stdc++.h>
+
+
+ using namespace std;
+
+ string year(int a)
+ {    
+       if(a%4==0){
+     
+      return "leap year";
+ }
+ 
+ else{
+
+      return "not leap year";
+ }
+     
+     return "invalid";
+     
+ }  
+    
+ 
+int main(){
+  
+  int a; 
+  string c;
+cout<<"enter the year:\n"; 
+ cin>> a;
+ cout<< "your enterd yesr is:" <<a<<"\n";
+ 
+c= year(a);
+
+cout<<"this is a: "<<c;
+
+return 0;
+
+ 
+}
+
+
+4.
+#include<bits/stdc++.h>
+
+
+ using namespace std;
+
+ string triangle(int a,int b, int c)
+ {    
+       if((a<90 && b<90 && c<90)&&a+b+c==180){
+     
+      return "acute";
+ }
+ 
+ else if((a==90 || b==90 || c==90)&&a+b+c==180){
+
+      return "right-angled";
+ }
+ 
+ else if((a>90 || b>90 || c>90 )&&a+b+c==180){
+
+      return "obtuse";
+ }
+    else 
+     return "invalid";
+     
+ }  
+    
+ 
+int main(){
+  
+  int a;
+  int b;
+  int c;
+  string d;
+cout<<"enter three angles:\n"; 
+ cin>> a>>b>>c;
+ cout<< "your enterd yesr is:" <<a<<b<<c<<"\n";
+ 
+d= triangle(a,b,c);
+
+cout<<"this is a: "<<d;
+
+return 0;
+
+ 
+}
+
+5.
+#include<bits/stdc++.h>
+
+
+ using namespace std;
+
+ void checknumber(int a)
+ {    
+       if(a>0){
+            cout<<"positive";
+     
+      
+ }
+ 
+   else if(a==0){
+            cout<<"zero";
+     
+      
+ }
+ 
+    else if(a<0){
+            cout<<"negetive";
+     
+ }
+    
+ }  
+    
+ 
+int main(){
+  
+  int a;
+  
+  
+cout<<"enter any number:\n"; 
+ cin>> a;
+ cout<< "your enterd number is: " << a<< "\n";
+ 
+ checknumber(a);
+ 
+return 0;
+
+ 
+}
+
+
+6.
+//Write a C++ function that takes three numbers as arguments and returns the largest 
+//one using if-else statements and relational operators.
+
+
+
+  #include<bits/stdc++.h>
+
+
+ using namespace std;
+
+ int largest(int a,int b, int c)
+ {    
+       if(a>b && a>c){
+     
+      return a;
+ }
+ 
+ else if(b>c && b>a){
+
+      return b;
+ }
+ 
+ else if(c>a && c>b){
+
+      return c;
+ }
+   return 0;
+     
+ }  
+    
+ 
+int main(){
+  
+  int a;
+  int b;
+  int c;
+  int d;
+cout<<"enter three numbers:\n"; 
+ cin>> a>>b>>c;
+ cout<< "your enterd numbers is:" <<a<<b<<c<<"\n";
+ 
+d= largest(a,b,c);
+
+cout<<"largest number is: "<<d;
+
+return 0;
+
+ 
+}
+
+ 
+
+7.
+//Create a C++ function that takes a character as an argument and returns
+//whether it is a vowel or consonant using if-else statements.
+
+
+
+  #include<bits/stdc++.h>
+
+
+ using namespace std;
+
+ string alphabate(char a)
+ {    
+       if(a=='a'  || a=='e' || a=='i' || a=='o' || a=='u'){
+     
+      return "vowel";
+ }
+ 
+ else  {
+
+      return "consonant";
+ }
+ 
+  
+   
+     
+ }  
+    
+ 
+int main(){
+  
+  char a;
+  char d;
+cout<<"enter any alphbate:\n"; 
+ cin>> a ;
+ cout<< "your enterd alpha is:" <<a <<"\n";
+ 
+ alphabate(a);
+ 
+ cout<< "your enterd alpha is:" << alphabate(a)<<"\n";
+
+ 
+
+return 0;
+
+ 
+}
+
+ 
+
+8.
+//Write a C++ function that takes a person's age as an argument and returns 
+//their age group (child, teenager, adult, senior) using if-else statements.
+
+
+
+  #include<bits/stdc++.h>
+
+
+ using namespace std;
+
+ string alphabate(int a)
+ {    
+       if(a>60){
+     
+      return "senior";
+ }
+ 
+ else if  (a>18 && a<60){
+
+      return "adult";
+ }
+ 
+ else if  (a>13 && a<17){
+
+      return "teenager";
+ }
+  else if  (a>0 && a<13){
+
+      return "child";
+ }
+  
+   return 0;
+     
+ }  
+    
+ 
+int main(){
+  
+  int a;
+  string d;
+cout<<"enter the age:\n"; 
+ cin>> a ;
+ cout<< "your enterd age is:" <<a <<"\n";
+ 
+ alphabate(a);
+ 
+ cout<< "is a:" <<   alphabate(a)<<"\n";
+
+ 
+
+return 0;
+
+ 
+}
+
+ 
+9.
+//Develop a C++ function that takes a string as an argument and returns 
+//whether it is a palindrome (reads the same backward as forward) using if-else statements.
+  
+  
+  #include<bits/stdc++.h>
+
+
+ using namespace std;
+
+  string palindrome(int num) 
+  {
+        int temp=num;
+        int sum=0,rem=0;
+        while(num!=0){
+            rem=num%10;
+            sum=sum*10+rem;;
+            num=num/10;
+            
+        }
+    
+   
+    if(sum==temp){
+       return "palindrome";
+    }
+    
+    
+    
+    else{
+       return "not palindrome";
+    }
+         
+   
+}
+
+    
+ 
+int main(){
+  
+  int num;
+  string d;
+cout<<"enter a num:\n"; 
+ cin>> num ;
+ cout<< "your enterd num is:" <<num <<"\n";
+ 
+ d=palindrome(num);
+ 
+ cout<< "is a:" <<d<<"\n";
+
+ 
+
+return 0;
+
+ 
+}
+
+ 10.
+//Write a C++ function that takes age and time of day as arguments and returns
+//the ticket price for a movie after applying discounts for children and seniors using if-else statements.
+
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+float getticketprice(int age, string timeofday) {
+    float standardprice = 200;
+    float ticketprice = standardprice;
+    
+    
+    if (age < 12) {
+       
+        ticketprice = standardprice * 0.5;
+    } else if (age >= 65) {
+       
+        ticketprice = standardprice * 0.7;
+    } else {
+        ticketprice = standardprice;
+    }
+ 
+    if (timeofday == "morning" || timeofday == "afternoon") {
+     
+        ticketprice = ticketprice * 0.8;
+    }
+    
+    return ticketprice;
+}
+
+int main() {
+    int age;
+    string timeofday;
+    
+    cout << "Enter your age: ";
+    cin >> age;
+    
+    cout << "Enter the time of day (e.g., 'morning', 'afternoon', 'evening'): ";
+    cin >> timeofday;
+    
+    float price = getticketprice(age, timeofday);
+    cout << "The ticket price is: ₹" << price << endl;
+    
+    return 0;
+}
+
+
+11.
+#include <iostream>
+
+using namespace std;
+
+string Category(char ch) {
+    if (ch >= 'A' && ch <= 'Z') {
+        return "uppercase letter";
+    } else if (ch >= 'a' && ch <= 'z') {
+        return "lowercase letter";
+    } else if (ch >= '0' && ch <= '9') {
+        return "digit";
+    } else {
+        return "special character";
+    }
+}
+
+int main() {
+    char ch;
+    
+    cout << "Enter a character: ";
+    cin >> ch;
+    
+    string category = Category(ch);
+    cout << "The character is a: " << category << endl;
+    
+    return 0;
+}
+
+
+12.
+//Implement a C++ function that takes the quantity of books purchased as an argument and return
+//s the total cost after applying discounts based on the quantity using if-else statements.
+
+
+
+
+#include <iostream>
+
+using namespace std;
+
+float discounts(int a) 
+{   float basecost=1000;
+
+    if (a >= 100) {
+         
+        return ((basecost*a)-(((basecost*a)/100)*30));
+    } 
+    else if (a>=50) {
+      return ((basecost*a)-(((basecost*a)/100)*12));}
+    else if (a>=25) {
+       return ((basecost*a)-(((basecost*a)/100)*5));}
+    else {
+        return basecost*a;
+    }
+}
+
+int main() {
+    int a;
+    int cost;
+    cout << "Enter the quantity: ";
+    cin >> a;
+    
+     cost=discounts(a);
+    cout << "The total cost after discount: " << cost << endl;
+    
+    return 0;
+}
+
+
+13.
+#include <iostream>
+
+using namespace std;
+
+bool isPowerOfTwo(int num) {
+    if (num <= 0) {
+        return false;
+    } else if ((num & (num - 1)) == 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+int main() {
+    int num;
+    
+    cout << "Enter a number: ";
+    cin >> num;
+    
+    if (isPowerOfTwo(num)) {
+        cout << num << " is a power of two." << endl;
+    } else {
+        cout << num << " is not a power of two." << endl;
+    }
+    
+    return 0;
+}
+
+
+
+
+
+14.
+ //Write a C++ function that takes the age of a person as an argument and uses logical operators to return
+ //their category ("Child", "Teenager", "Adult", "Senior").
+ 
+#include<bits/stdc++.h>
+
+
+ using namespace std;
+
+ string age(int a)
+ {    
+       if(a>60){
+     
+      return "senior";
+ }
+ 
+ else if  (a>18 && a<60){
+
+      return "adult";
+ }
+ 
+ else if  (a>13 && a<17){
+
+      return "teenager";
+ }
+  else if  (a>0 && a<13){
+
+      return "child";
+ }
+  
+   return 0;
+     
+ }  
+    
+ 
+int main(){
+  
+  int a;
+  string d;
+cout<<"enter the age:\n"; 
+ cin>> a ;
+ cout<< "your enterd age is:" <<a <<"\n";
+ 
+ age(a);
+ 
+ cout<< "is a:" <<   age(a)<<"\n";
+
+ 
+
+return 0;
+
+ 
+}
+
+ 
+15.
+ //Create a C++ function that takes a student's score as an argument and returns whether the score is valid
+ //(between 0 and 100) and whether the student passed (score >= 50) or failed using logical operators.
+ 
+#include<bits/stdc++.h>
+
+
+ using namespace std;
+
+ string score(int a)
+ {    
+       if(a>=50 && a<=100){
+     
+      return "student is pass";
+ }
+ 
+ else{
+      return "invalid";
+ }
+  
+   return 0;
+     
+ }  
+    
+ 
+int main(){
+  
+  int a;
+  string d;
+cout<<"enter score :\n"; 
+ cin>> a ;
+ cout<< "your enterd score is:" <<a <<"\n";
+ 
+ score(a);
+ 
+ cout<< "is a:" <<   score(a)<<"\n";
+
+ 
+
+return 0;
+
+ 
+}
+
+ 
+16.
+//Develop a C++ function that takes an integer as an argument and returns 
+//whether it is divisible by both 3 and 5 using logical operators.
+
+#include<bits/stdc++.h>
+
+
+ using namespace std;
+
+ string check(int a)
+ {    
+       if(a%3==0 && a%5==0){
+     
+      return "divisible by both 3 and 5  ";
+ }
+ 
+ else{
+      return "not divisible by both 3 and 5 ";
+ }
+  
+   return 0;
+     
+ }  
+    
+ 
+int main(){
+  
+  int a;
+  string d;
+cout<<"enter value :\n"; 
+ cin>> a ;
+ cout<< "your enterd value is:" <<a <<"\n";
+ 
+ check(a);
+ 
+ cout<< ":" <<   check(a)<<"\n";
+
+ 
+
+return 0;
+
+ 
+}
+
+
+17.
+
+//Write a C++ function that takes a credit score as an argument and returns its category
+//("Excellent," "Good," "Fair," "Poor") using if-else statements.
+
+#include<bits/stdc++.h>
+
+
+ using namespace std;
+
+ string creditscore(int a)
+ {    
+       if(a>800){
+     
+      return " Excellent";
+ }
+  else if(a>800 || a>700){
+     
+      return " good";
+ }
+ 
+  else if(a>700 || a>600){
+     
+      return " fair";
+ }
+ 
+  else if(a<500){
+     
+      return " poor";
+ }
+ 
+ 
+ 
+ else{
+      return "invalid";
+ }
+  
+   return 0;
+     
+ }  
+    
+ 
+int main(){
+  
+  int a;
+  string d;
+cout<<"enter value :\n"; 
+ cin>> a ;
+ cout<< "your enterd value is:" <<a <<"\n";
+ 
+ creditscore(a);
+ 
+ cout<< ":" <<   creditscore(a)<<"\n";
+
+ 
+
+return 0;
+
+ 
+}
+
+
+18.
+//Implement a C++ function that takes a student's grades as arguments and returns
+//whether the student is eligible for a scholarship using if-else statements.
+
+#include<bits/stdc++.h>
+
+
+ using namespace std;
+
+ string grade(char a)
+ {    
+       if(a=='a' || a=='b' || a=='c'){
+     
+      return " eligible";
+ }
+   
+ 
+ 
+ else{
+      return "not eligible";
+ }
+  
+   return 0;
+     
+ }  
+    
+ 
+int main(){
+  
+  char a;
+  string d;
+cout<<"enter grade :\n"; 
+ cin>> a ;
+ cout<< "your enterd grade is:" <<a <<"\n";
+ 
+ grade(a);
+ 
+ cout<< ":" <<   grade(a)<<"\n";
+
+ 
+
+return 0;
+
+ 
+}
+
+
+
+20.
+//Implement a C++ function that takes a day of the week as an argument and returns
+//whether it's a weekday or a weekend day using if-else statements.
+
+#include<bits/stdc++.h>
+
+
+ using namespace std;
+
+ string day(string a)
+ {    
+       if(a=="monday" || a=="tuesday" || a=="wednesday" || a=="thrusday" || a=="friday" || a=="saturday"){
+     
+      return " weekday";
+ }
+   
+ 
+ 
+ else{
+      return "weekend";
+ }
+  
+   return 0;
+     
+ }  
+    
+ 
+int main(){
+  
+  string a;
+  string d;
+cout<<"enter day :\n"; 
+ cin>> a ;
+ cout<< "your enterd day is:" <<a <<"\n";
+ 
+ day(a);
+ 
+ cout<< ":" <<   day(a)<<"\n";
+
+ 
+
+return 0;
+
+ 
+}
+
+
