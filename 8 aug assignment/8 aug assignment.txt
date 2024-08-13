@@ -1,0 +1,374 @@
+Question Number 1.
+Write a C++ function that takes a character as input and uses nested if-else statements to determine if it is a vowel or consonant, considering both uppercase and lowercase letters.
+
+#include <bits/stdc++.h>
+using namespace std;
+
+string checkVowelConsonant(char ch) {
+    // Code here
+}
+
+int main() {
+    // Code here
+}
+
+-----
+Question Number 2.
+Write a C++ function that takes an integer as input and uses nested if-else statements to determine if the number is positive and even, positive and odd, negative and even, or negative and odd.
+
+#include <bits/stdc++.h>
+using namespace std;
+
+string checkNumber(int num) {
+    // Code here
+}
+
+int main() {
+    // Code here
+}
+
+-----
+Question Number 3.
+Write a C++ function that takes a string as input and uses nested if-else statements to determine if the string is a palindrome.
+
+#include <bits/stdc++.h>
+using namespace std;
+
+bool isPalindrome(string str) {
+    // Code here
+}
+
+int main() {
+    // Code here
+}
+
+-----
+Question Number 4.
+Write a C++ function that uses nested if-else statements to determine whether a year is a leap year.
+
+#include <bits/stdc++.h>
+using namespace std;
+
+bool isLeapYear(int year) {
+    // Code here
+}
+
+int main() {
+    // Code here
+}
+
+-----
+Question Number 5.
+Write a C++ function that takes three integers as input and uses nested if-else statements to determine the largest of the three numbers.
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int findLargest(int a, int b, int c) {
+    // Code here
+}
+
+int main() {
+    // Code here
+}
+
+-----
+Question Number 6.
+Write a C++ function that takes two integers as input and uses nested if-else statements to determine the greatest common divisor (GCD) of the two numbers.
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int gcd(int a, int b) {
+    // Code here
+}
+
+int main() {
+    // Code here
+}
+
+-----
+Question Number 7.
+Write a C++ function that takes two integers as input and uses nested if-else statements to determine the least common multiple (LCM) of the two numbers.
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int lcm(int a, int b) {
+    // Code here
+}
+
+int main() {
+    // Code here
+}
+
+-----
+Question Number 8.
+Write a C++ function that takes an integer as input and uses nested if-else statements to determine whether the number is prime.
+
+#include <bits/stdc++.h>
+using namespace std;
+
+bool isPrime(int num) {
+    // Code here
+}
+
+int main() {
+    // Code here
+}
+
+-----
+Question Number 9.
+Write a C++ function that takes an integer as input and uses nested if-else statements to determine whether the number is a perfect square.
+
+#include <bits/stdc++.h>
+using namespace std;
+
+bool isPerfectSquare(int num) {
+    // Code here
+}
+
+int main() {
+    // Code here
+}
+
+-----
+Question Number 10.
+Write a C++ function that takes an integer as input and uses nested if-else statements to determine whether the number is an Armstrong number.
+
+#include <bits/stdc++.h>
+using namespace std;
+
+bool isArmstrong(int num) {
+    // Code here
+}
+
+int main() {
+    // Code here
+}
+
+-----
+Question Number 11.
+Write a C++ function that takes an integer as input and uses nested if-else statements to determine whether the number is a Fibonacci number.
+
+#include <bits/stdc++.h>
+using namespace std;
+
+bool isFibonacci(int num) {
+    // Code here
+}
+
+int main() {
+    // Code here
+}
+
+-----
+Question Number 12.
+Write a C++ function that takes an integer as input and uses nested if-else statements to determine whether the number is a palindrome.
+
+#include <bits/stdc++.h>
+using namespace std;
+
+bool isPalindrome(int num) {
+    // Code here
+}
+
+int main() {
+    // Code here
+}
+
+-----
+Question Number 13.
+Write a C++ function that takes an integer as input and uses nested if-else statements to determine whether the number is even or odd.
+
+#include <bits/stdc++.h>
+using namespace std;
+
+string evenOrOdd(int num) {
+    // Code here
+}
+
+int main() {
+    // Code here
+}
+
+-----
+Question Number 14.
+Write a C++ function that takes a character as input and uses nested if-else statements to determine whether it is a digit, a letter, or a special character.
+
+#include <bits/stdc++.h>
+using namespace std;
+
+string checkCharacterType(char ch) {
+    // Code here
+}
+
+int main() {
+    // Code here
+}
+
+-----
+Question Number 15.
+Write a C++ function that takes a character as input and uses nested if-else statements to determine whether it is an uppercase letter, a lowercase letter, or a digit.
+
+#include <bits/stdc++.h>
+using namespace std;
+
+string checkCharacterClass(char ch) {
+    // Code here
+}
+
+int main() {
+    // Code here
+}
+
+-----
+Question Number 16.
+Write a C++ function that takes a float as input and uses nested if-else statements to determine whether the number is positive, negative, or zero.
+
+#include <bits/stdc++.h>
+using namespace std;
+
+string checkSign(float num) {
+    // Code here
+}
+
+int main() {
+    // Code here
+}
+
+-----
+Question Number 17.
+Write a C++ function that takes three integers as input and uses nested if-else statements to determine whether they can form the sides of a valid triangle.
+
+#include <bits/stdc++.h>
+using namespace std;
+
+bool isValidTriangle(int a, int b, int c) {
+    // Code here
+}
+
+int main() {
+    // Code here
+}
+
+-----
+Question Number 18.
+Write a C++ function that takes an integer as input and uses nested if-else statements to determine whether the number is divisible by 2, 3, or 5.
+
+#include <bits/stdc++.h>
+using namespace std;
+
+string checkDivisibility(int num) {
+    // Code here
+}
+
+int main() {
+    // Code here
+}
+
+-----
+Question Number 19.
+Write a C++ function that takes a float as input and uses nested if-else statements to categorize it as a large, medium, or small number based on specific thresholds.
+
+#include <bits/stdc++.h>
+using namespace std;
+
+string categorizeNumber(float num) {
+    // Code here
+}
+
+int main() {
+    // Code here
+}
+
+-----
+Question Number 20.
+Write a C++ function that takes an integer as input and uses nested if-else statements to determine whether it is a multiple of 4 and 6.
+
+#include <bits/stdc++.h>
+using namespace std;
+
+bool isMultipleOf4And6(int num) {
+    // Code here
+}
+
+int main() {
+    // Code here
+}
+
+-----
+Question Number 21.
+Write a C++ function that takes an integer as input and uses nested if-else statements to determine whether it is in the range of 100 to 200, inclusive.
+
+#include <bits/stdc++.h>
+using namespace std;
+
+bool isInRange(int num) {
+    // Code here
+}
+
+int main() {
+    // Code here
+}
+
+-----
+Question Number 22.
+Write a C++ function that takes a character as input and uses nested if-else statements to determine if it is a vowel, consonant, or digit.
+
+#include <bits/stdc++.h>
+using namespace std;
+
+string checkVowelConsonantDigit(char ch) {
+    // Code here
+}
+
+int main() {
+    // Code here
+}
+
+-----
+Question Number 23.
+Write a C++ function that takes an integer as input and uses nested if-else statements to determine whether it is a prime number, a perfect square, or a palindrome.
+
+#include <bits/stdc++.h>
+using namespace std;
+
+string checkNumberProperties(int num) {
+    // Code here
+}
+
+int main() {
+    // Code here
+}
+
+-----
+Question Number 24.
+Write a C++ function that takes three integers as input and uses nested if-else statements to determine whether they are all positive, all negative, or a mix of both.
+
+#include <bits/stdc++.h>
+using namespace std;
+
+string checkSigns(int a, int b, int c) {
+    // Code here
+}
+
+int main() {
+    // Code here
+}
+
+-----
+Question Number 25.
+Write a C++ function that takes an integer as input and uses nested if-else statements to determine whether it is a prime number, a perfect number, or a Fibonacci number.
+
+#include <bits/stdc++.h>
+using namespace std;
+
+string checkSpecialProperties(int num) {
+    // Code here
+}
+
+int main() {
+    // Code here
+}
+-----

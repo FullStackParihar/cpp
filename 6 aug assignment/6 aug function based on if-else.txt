@@ -1,4 +1,4 @@
-1.
+Question Number 1.
 #include<bits/stdc++.h>
 
 
@@ -37,7 +37,7 @@ return 0;
 }
 
 
-2.
+Question Number 2.
 #include<bits/stdc++.h>
 
 
@@ -83,7 +83,7 @@ return 0;
 }
 
 
-3.
+Question Number 3.
 #include<bits/stdc++.h>
 
 
@@ -124,7 +124,7 @@ return 0;
 }
 
 
-4.
+Question Number 4.
 #include<bits/stdc++.h>
 
 
@@ -171,7 +171,7 @@ return 0;
  
 }
 
-5.
+Question Number 5.
 #include<bits/stdc++.h>
 
 
@@ -216,7 +216,7 @@ return 0;
 }
 
 
-6.
+Question Number 6.
 //Write a C++ function that takes three numbers as arguments and returns the largest 
 //one using if-else statements and relational operators.
 
@@ -269,7 +269,7 @@ return 0;
 
  
 
-7.
+Question Number 7.
 //Create a C++ function that takes a character as an argument and returns
 //whether it is a vowel or consonant using if-else statements.
 
@@ -319,7 +319,7 @@ return 0;
 
  
 
-8.
+Question Number 8.
 //Write a C++ function that takes a person's age as an argument and returns 
 //their age group (child, teenager, adult, senior) using if-else statements.
 
@@ -376,7 +376,7 @@ return 0;
 }
 
  
-9.
+Question Number 9.
 //Develop a C++ function that takes a string as an argument and returns 
 //whether it is a palindrome (reads the same backward as forward) using if-else statements.
   
@@ -432,7 +432,7 @@ return 0;
  
 }
 
- 10.
+Question Number 10.
 //Write a C++ function that takes age and time of day as arguments and returns
 //the ticket price for a movie after applying discounts for children and seniors using if-else statements.
 
@@ -482,7 +482,7 @@ int main() {
 }
 
 
-11.
+Question Number 11.
 #include <iostream>
 
 using namespace std;
@@ -512,7 +512,7 @@ int main() {
 }
 
 
-12.
+Question Number 12.
 //Implement a C++ function that takes the quantity of books purchased as an argument and return
 //s the total cost after applying discounts based on the quantity using if-else statements.
 
@@ -552,7 +552,7 @@ int main() {
 }
 
 
-13.
+Question Number 13.
 #include <iostream>
 
 using namespace std;
@@ -586,7 +586,7 @@ int main() {
 
 
 
-14.
+Question Number 14.
  //Write a C++ function that takes the age of a person as an argument and uses logical operators to return
  //their category ("Child", "Teenager", "Adult", "Senior").
  
@@ -641,7 +641,7 @@ return 0;
 }
 
  
-15.
+Question Number 15.
  //Create a C++ function that takes a student's score as an argument and returns whether the score is valid
  //(between 0 and 100) and whether the student passed (score >= 50) or failed using logical operators.
  
@@ -686,7 +686,7 @@ return 0;
 }
 
  
-16.
+Question Number 16.
 //Develop a C++ function that takes an integer as an argument and returns 
 //whether it is divisible by both 3 and 5 using logical operators.
 
@@ -731,7 +731,7 @@ return 0;
 }
 
 
-17.
+Question Number 17.
 
 //Write a C++ function that takes a credit score as an argument and returns its category
 //("Excellent," "Good," "Fair," "Poor") using if-else statements.
@@ -793,7 +793,8 @@ return 0;
 }
 
 
-18.
+Question Number 18.
+
 //Implement a C++ function that takes a student's grades as arguments and returns
 //whether the student is eligible for a scholarship using if-else statements.
 
@@ -841,7 +842,7 @@ return 0;
 
 
 
-20.
+Question Number 20.
 //Implement a C++ function that takes a day of the week as an argument and returns
 //whether it's a weekday or a weekend day using if-else statements.
 
