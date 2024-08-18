@@ -1,12 +1,8 @@
-#include <iostream>
-
-int main() {
-//two dimension array
+ 
 #include <bits/stdc++.h>
 using namespace std;
 
-int main()
-{
+int main(){
     
  int arr[3][3];
  
@@ -32,13 +28,7 @@ int main()
  
     cout<<endl;
 }
-    return 0;
-}
-
- 
-
-
-
+    
 
     return 0;
 }
