@@ -1,0 +1,151 @@
+Question Number 1.
+print  1 1 2 3 5 8 13 .....
+    // a=1 b=1 c =a+b 
+
+
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{   
+    int arr[10];
+    arr[0]=1;
+    arr[1]=1;
+    
+    
+    for(int i=2;i<10;i++){
+        arr[i]=arr[i-1]+arr[i-2];
+    }
+    for(int i=0;i<10;i++){
+        cout<<arr[i]<<" ";
+    }
+}
+
+
+
+
+Question Number
+2.print 1 2 2 4 8 32 ....
+//    a=1 b=2 c =a*b
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{   
+    int arr[10];
+    arr[0]=1;
+    arr[1]=2;
+    
+    
+    for(int i=2;i<10;i++){
+        arr[i]=arr[i-1]*arr[i-2];
+    }
+    for(int i=0;i<10;i++){
+        cout<<arr[i]<<" ";
+    }
+}
+
+
+
+
+
+Question Number
+3.print 1 2 3 6 11 20 ....
+    //  a=1 b=2 c=3  d =a+b+c
+
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{   
+    int arr[10];
+    arr[0]=1;
+    arr[1]=2;
+    arr[2]=3;
+    
+    
+    for(int i=3;i<10;i++){
+        arr[i]=arr[i-1]+arr[i-2]+arr[i-3];
+    }
+    for(int i=0;i<10;i++){
+        cout<<arr[i]<<" ";
+    }
+}
+
+
+
+
+Question Number
+4.print 1 2 4 8 32 ....
+    //  a=1 b=2 c= power of 2
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{   
+    int arr[10];
+    
+    
+    for(int i=0;i<10;i++){
+         arr[i] = 1 << i;
+    }
+    for(int i=0;i<10;i++){
+        cout<<arr[i]<<" ";
+    }
+}
+
+
+
+
+Question Number
+5.print 1 2 3 6 18 .....
+    //  a =1 b=2 c=3 d =c*b 
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{   
+    int arr[10];
+    arr[0]=1;
+    arr[1]=2;
+    arr[2]=3;
+    
+    for(int i=3;i<10;i++){
+         arr[i] = arr[i-1]*arr[i-2];
+    }
+    for(int i=0;i<10;i++){
+        cout<<arr[i]<<" ";
+    }
+}
+
+
+
+
+
+Question Number
+6.print there are four variables a = 1 b= 2 c= 3 c=4
+//    formulate  1 2 3 4 5 7 9 12 16  and so on
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{   
+    int arr[10];
+    arr[0]=1;
+    arr[1]=2;
+    arr[2]=3;
+    arr[3]=4;
+    
+    for(int i=4;i<10;i++){
+         arr[i] = arr[i-3]+arr[i-2];
+    }
+    for(int i=0;i<10;i++){
+        cout<<arr[i]<<" ";
+    }
+}
