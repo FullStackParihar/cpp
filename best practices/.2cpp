@@ -1,0 +1,60 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int arr1[2][2], arr2[2][2], sumarray[2][2];
+
+    // Input for the first 2x2 matrix
+    cout << "Enter values for the first 2x2 matrix:\n";
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 2; j++) {
+            cout << "Enter the value at [" << i << "][" << j << "]: ";
+            cin >> arr1[i][j];
+        }
+    }
+
+    // Input for the second 2x2 matrix
+    cout << "\nEnter values for the second 2x2 matrix:\n";
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 2; j++) {
+            cout << "Enter the value at [" << i << "][" << j << "]: ";
+            cin >> arr2[i][j];
+        }
+    }
+
+    // Displaying the first matrix
+    cout << "\nFirst 2x2 matrix:\n";
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 2; j++) {
+            cout << arr1[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+    // Displaying the second matrix
+    cout << "\nSecond 2x2 matrix:\n";
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 2; j++) {
+            cout << arr2[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+    // Calculating the sum of the two matrices
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 2; j++) {
+            sumarray[i][j] = arr1[i][j] + arr2[i][j];
+        }
+    }
+
+    // Displaying the result matrix
+    cout << "\nResultant 2x2 matrix after addition:\n";
+    for (int i = 0; i < 2; i++) 
+        for (int j = 0; j < 2; j++) {
+            cout << sumarray[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
