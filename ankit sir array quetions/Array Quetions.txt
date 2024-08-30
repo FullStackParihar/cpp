@@ -1,0 +1,103 @@
+ARRAY PROBLEM 
+1. Find the Maximum Value in an Array 
+o Explanation: Identify the largest value in the array. 
+o Given Array: {3, 1, 4, 1, 5, 9, 2} 
+o Expected Result: 9 
+2. Reverse an Array 
+o Explanation: Reverse the order of elements in the array. 
+o Given Array: {1, 2, 3, 4, 5} 
+o Expected Array: {5, 4, 3, 2, 1} 
+3. Remove Duplicates from a Sorted Array 
+o Explanation: Remove duplicates and return the unique elements. o Given Array: {1, 1, 2, 3, 3, 4} 
+o Expected Array: {1, 2, 3, 4} 
+4. Find the Sum of All Even Numbers in an Array 
+o Explanation: Sum all even numbers present in the array. 
+o Given Array: {1, 2, 3, 4, 5, 6} 
+o Expected Result: 12 (Sum of 2, 4, and 6) 
+5. Merge Two Sorted Arrays 
+o Explanation: Combine two sorted arrays into one sorted array. 
+o Given Arrays: {1, 3, 5} and {2, 4, 6} 
+o Expected Array: {1, 2, 3, 4, 5, 6} 
+6. Find the Index of the First Occurrence of a Value 
+o Explanation: Return the index of the first appearance of a specified value. o Given Array: {10, 20, 30, 40, 50} 
+o Search Value: 30 
+o Expected Result: 2 
+7. Rotate an Array to the Right by k Steps 
+o Explanation: Shift all elements to the right by k positions. 
+o Given Array: {1, 2, 3, 4, 5} 
+o Rotation (k = 2): 
+o Expected Array: {4, 5, 1, 2, 3} 
+8. Compute the Average of Elements in an Array 
+o Explanation: Calculate the average value of all elements in the array. o Given Array: {1, 2, 3, 4, 5} 
+o Expected Result: 3.0 (Average of 1, 2, 3, 4, and 5) 
+9. Find the Most Frequent Element in an Array 
+o Explanation: Determine the element that appears most often in the array. o Given Array: {1, 3, 2, 1, 4, 1, 5, 2} 
+o Expected Result: 1 
+10. Find the Median of a Sorted Array 
+o Explanation: Compute the middle value or average of middle values in a sorted  array. 
+o Given Array: {1, 3, 3, 6, 7, 8, 9} 
+o Expected Result: 6
+11. Rotate a 2D Array 90 Degrees Clockwise 
+o Explanation: Rotate a matrix 90 degrees clockwise. 
+o Given 2D Array: 
+1 2 3 
+4 5 6 
+7 8 9 
+o Expected 2D Array: 
+7 4 1 
+8 5 2 
+9 6 3 
+12. Find the Intersection of Two Arrays 
+o Explanation: Identify common elements between two arrays. 
+o Given Arrays: {1, 2, 2, 1} and {2, 2} 
+o Expected Array: {2, 2} 
+13. Shift All Zeroes to the End of the Array 
+o Explanation: Move all zero elements to the end while maintaining the order of  non-zero elements. 
+o Given Array: {0, 1, 0, 3, 12} 
+o Expected Array: {1, 3, 12, 0, 0} 
+14. Find the Longest Increasing Subsequence 
+o Explanation: Identify the longest subsequence where each element is greater than  the previous one. 
+o Given Array: {10, 9, 2, 5, 3, 7, 101, 18} 
+o Expected Array: {2, 3, 7, 101} 
+15. Check if Two Arrays are Rotations of Each Other 
+o Explanation: Determine if one array can be obtained by rotating the other array. o Given Arrays: {1, 2, 3, 4, 5} and {3, 4, 5, 1, 2} 
+o Expected Result: True 
+16. Compute the Product of All Elements Except the Current One 
+o Explanation: For each element, compute the product of all other elements in the  array. 
+o Given Array: {1, 2, 3, 4} 
+o Expected Array: {24, 12, 8, 6} 
+17. Find the Pair with the Given Sum 
+o Explanation: Identify a pair of elements that sum up to a specified value. o Given Array: {1, 4, 5, 3, 2} 
+o Sum Value: 7 
+o Expected Pair: {4, 3} 
+18. Find the Largest Sum of a Contiguous Subarray 
+o Explanation: Determine the maximum sum of any contiguous subarray. o Given Array: {34, -50, 42, 14, -5, 86}
+o Expected Result: 137 
+19. Count Inversions in an Array 
+o Explanation: Count the number of inversions (pairs where the earlier element is  greater than the later one). 
+o Given Array: {2, 4, 1, 3, 5} 
+o Expected Result: 3 
+20. Find the Missing Number in an Array of n-1 Elements 
+o Explanation: Identify the missing number from an array containing n-1 elements  ranging from 1 to n. 
+o Given Array: {1, 2, 4, 5} 
+o Expected Result: 3 
+21. Find All Unique Triplets in an Array that Sum to Zero 
+o Explanation: Identify all unique triplets in the array that sum up to zero. o Given Array: {-1, 0, 1, 2, -1, -4} 
+o Expected Triplets: {-1, -1, 2} and {-1, 0, 1} 
+22. Implement an Array-based Stack 
+o Explanation: Create a stack data structure using an array with push, pop, and top  operations. 
+o Given Array: {} (initially empty stack) 
+o Expected Stack Operations: 
+▪ Push 1, 2, 3: {1, 2, 3} 
+▪ Pop: {1, 2} 
+23. Find the Kth Largest Element in an Array 
+o Explanation: Determine the Kth largest element in an unsorted array. o Given Array: {3, 2, 1, 5, 6, 4} 
+o K: 2 
+o Expected Result: 5 
+24. Sort an Array of 0s, 1s, and 2s 
+o Explanation: Sort an array containing only 0s, 1s, and 2s in linear time. o Given Array: {2, 0, 1, 2, 1, 0} 
+o Expected Array: {0, 0, 1, 1, 2, 2} 
+25. Generate All Subarrays of a Given Array 
+o Explanation: List all possible subarrays of the given array. 
+o Given Array: {1, 2} 
+o Expected Subarrays: {1}, {2}, {1, 2}
