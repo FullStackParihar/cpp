@@ -8,7 +8,7 @@ float computeAverage(int arr[], int n) {
         sum += arr[i];
     }
     
-    // Calculate the average
+     
     float average = static_cast<float>(sum) / n;
     
     return average;
