@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/pc/Desktop/C++/CPP assignment/ankit sir array quetions",
-      "program": "c:/Users/pc/Desktop/C++/CPP assignment/ankit sir array quetions/build/Debug/outDebug",
+      "cwd": "c:/Users/pc/Desktop/C++/CPP assignment/ankit sir array quetions/build/Debug",
+      "program": "c:/Users/pc/Desktop/C++/CPP assignment/ankit sir array quetions/build/Debug/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
