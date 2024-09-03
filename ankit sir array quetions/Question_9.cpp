@@ -1,3 +1,7 @@
+// 9. Find the Most Frequent Element in an Array 
+// o Explanation: Determine the element that appears most often in the array. o Given Array: {1, 3, 2, 1, 4, 1, 5, 2} 
+// o Expected Result: 1 /
+
 #include <iostream>
 
 int findMostFrequentElement(int arr[], int n) {

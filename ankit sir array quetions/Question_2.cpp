@@ -1,21 +1,31 @@
-/*3. Remove Duplicates from a Sorted Array 
-o Explanation: Remove duplicates and return the unique elements. o Given Array: {1, 1, 2, 3, 3, 4} 
-o Expected Array: {1, 2, 3, 4}  */
+/*2. Reverse an Array 
+o Explanation: Reverse the order of elements in the array. 
+o Given Array: {1, 2, 3, 4, 5} 
+o Expected Array: {5, 4, 3, 2, 1}  */
 
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
-int main()
-{
+int main() {
+    int arr[] = {1, 2, 3, 4, 5};
+    int n = sizeof(arr) / sizeof(arr[0]);
 
-    int a[] ={1, 1, 2, 3, 3, 4} ;
-
-    
-    for (int i = 0; i < 7; i++)
-    {
-         
+    cout << "Original array: ";
+    for(int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
     }
-    
-     
+
+  
+    for(int i = 0; i < n / 2; i++) {
+        int temp = arr[i];
+        arr[i] = arr[n - i - 1];
+        arr[n - i - 1] = temp;
+    }
+
+    cout << "\nReversed array: ";
+    for(int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+
     return 0;
 }

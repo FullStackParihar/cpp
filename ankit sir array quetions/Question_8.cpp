@@ -1,3 +1,7 @@
+// 8. Compute the Average of Elements in an Array 
+// o Explanation: Calculate the average value of all elements in the array. o Given Array: {1, 2, 3, 4, 5} 
+// o Expected Result: 3.0 (Average of 1, 2, 3, 4, and 5) 
+
 #include <iostream>
 
 float computeAverage(int arr[], int n) {
