@@ -1,3 +1,8 @@
+// 0. Find the Median of a Sorted Array 
+// o Explanation: Compute the middle value or average of middle values in a sorted  array. 
+// o Given Array: {1, 3, 3, 6, 7, 8, 9} 
+// o Expected Result: 6
+
 #include <iostream>
 
 int findMedian(int arr[], int n) {
