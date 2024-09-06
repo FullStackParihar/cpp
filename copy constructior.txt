@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+
+class Abc {
+public:
+	int k;
+
+	Abc(int y) {
+		k = y;
+	}
+
+	Abc(Abc &p) {
+		k = p.k;
+	}
+};
+
+int main() {
+	Abc a1(20);
+	Abc a2(a1);
+
+	cout << a2.k;
+
+
+	return 0;
+}
