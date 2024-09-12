@@ -1,0 +1,60 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+// Function to calculate factorial
+int factorial(int e) {
+    int fact = 1;
+    for (int i = 1; i <= e; i++) {
+        fact *= i;
+    }
+    return fact;
+}
+
+// Function to calculate the reverse of a number
+int reverseNumber(int num) {
+    int reversed = 0;
+    while (num != 0) {
+        int digit = num % 10;
+        reversed = reversed * 10 + digit;
+        num /= 10;
+    }
+    return reversed;
+}
+
+// Function to calculate the sum of four numbers
+int sum(int a, int b, int c, int d) {
+    return a + b + c + d;
+}
+
+// Function to calculate the product of four numbers
+int product(int a, int b, int c, int d) {
+    return a * b * c * d;
+}
+
+int main() {
+    int a, b, c, d;
+
+    cout << "Enter four values:" << endl;
+    cin >> a >> b >> c >> d;
+
+    int e = sum(a, b, c, d);
+    cout << "Sum of four values: " << e << endl;
+
+    // If sum is positive, calculate the factorial
+    if (e > 0) {
+        int f = factorial(e);
+        cout << "Factorial of the sum: " << f << endl;
+    }
+    // If sum is zero, calculate the product
+    else if (e == 0) {
+        int prod = product(a, b, c, d);
+        cout << "Product of the four input values: " << prod << endl;
+    }
+    // If sum is negative, reverse the second number
+    else {
+        int reversed = reverseNumber(abs(b)); // Reverse the absolute value of b
+        cout << "Reversed 2nd number (absolute): " << reversed << endl;
+    }
+
+    return 0;
+}
