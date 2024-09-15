@@ -1,9 +1,11 @@
  Question 1:
+user se 3 input lena agr unka avg 50 se zada aya then ek function call karna hai us function mai 20-30 print karna hai 
+ab agar uska avg 50 se kam ata hai to fir function calling 1-20 print karna hai
  
 #include <iostream>
 using namespace std;
 
-// Function to print a range of numbers
+ 
 void printRange(int start, int end) {
     for (int i = start; i <= end; i++) {
         cout << i << " ";
@@ -16,7 +18,7 @@ int main() {
     cout << "Enter three numbers: ";
     cin >> num1 >> num2 >> num3;
 
-    // Calculate average of the three numbers
+    
     float avg = (num1 + num2 + num3) / 3.0;
 
     if (avg > 50) {
@@ -27,13 +29,17 @@ int main() {
 
     return 0;
 }
+
+
+
 Question 2:
+   3 input lena hai usme se jo max hoga agr wo b hota hai to ek function call karna hai aur us function mai 5 ka factorial print karwana , max agar c hota hai to fir c powerof2 ha ya nahi check karna hai, agr max a hota hai to fir apna nam print karna hai.
  
 #include <iostream>
 #include <cmath>
 using namespace std;
 
-// Function to calculate factorial of 5
+ 
 int factorial5() {
     int fact = 1;
     for (int i = 1; i <= 5; i++) {
@@ -42,12 +48,12 @@ int factorial5() {
     return fact;
 }
 
-// Function to check if a number is a power of 2
+ 
 bool isPowerOf2(int n) {
     return (n > 0) && (n & (n - 1)) == 0;
 }
 
-// Function to print name
+ 
 void printName() {
     cout << "YourName" << endl; // Replace "YourName" with your actual name
 }
@@ -57,7 +63,7 @@ int main() {
     cout << "Enter three numbers: ";
     cin >> num1 >> num2 >> num3;
 
-    // Find the maximum of the three numbers
+ 
     int maxNum = max({num1, num2, num3});
 
     if (maxNum == 5) {
@@ -70,13 +76,17 @@ int main() {
 
     return 0;
 }
+
+
 Question 3:
+ 4 input lena hai unka sum karna hai(input -ve bhi ho sakte hai ) agar unka sum -ve hi ata hai to fir reverse of 2nd number karna hai
+ agr wo 2nd number -ve hota hai to use positive mai karke uska reverse nikalna hai (hint: abs(b)) agr sum +ve hota hai to fir 4 ka factorial nikalna hai agar sum 0 hota hai to fir 4 input ka product nikalna hai.
  
 #include <iostream>
 #include <cmath>
 using namespace std;
 
-// Function to calculate factorial of 4
+ 
 int factorial4() {
     int fact = 1;
     for (int i = 1; i <= 4; i++) {
@@ -85,7 +95,7 @@ int factorial4() {
     return fact;
 }
 
-// Function to reverse a number
+ 
 int reverseNumber(int n) {
     int reversed = 0;
     n = abs(n);  // Use the absolute value of the number
@@ -101,37 +111,41 @@ int main() {
     cout << "Enter four numbers: ";
     cin >> num1 >> num2 >> num3 >> num4;
 
-    // Calculate the sum of four numbers
+ 
     int sum = num1 + num2 + num3 + num4;
 
     if (sum < 0) {
-        // If sum is negative, reverse the second number (convert to positive if needed)
+ 
         if (num2 < 0) {
             num2 = abs(num2); // Convert to positive
         }
         cout << "Reverse of second number: " << reverseNumber(num2) << endl;
     } else if (sum > 0) {
-        // If sum is positive, calculate the factorial of 4
+ 
         cout << "Factorial of 4: " << factorial4() << endl;
     } else {
-        // If sum is zero, calculate the product of the four numbers
+ 
         int product = num1 * num2 * num3 * num4;
         cout << "Product of the four numbers is: " << product << endl;
     }
 
     return 0;
 }
+
+
+
 Question 4:
- 
+ 5 input lena hai agar sum greater than 50 hota hai to ek function call karna hai usme mai 1-50 ka sum nikalna hai, agar less than 50 hota hai to fir ek function call karna hai usme 1 input char lene hai aur check karna hai ki wo vowel hai ya nahi. agar equals to 50 hota hai then check karna hai sum even tha ya odd.
+
 #include <iostream>
 using namespace std;
 
-// Function to calculate sum of numbers from 1 to n
+ 
 int sumTo50() {
     return (50 * (50 + 1)) / 2;
 }
 
-// Function to check if a character is a vowel
+ 
 bool isVowel(char c) {
     c = tolower(c);
     return c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u';
@@ -142,7 +156,7 @@ int main() {
     cout << "Enter five numbers: ";
     cin >> num1 >> num2 >> num3 >> num4 >> num5;
 
-    // Calculate the sum of the five numbers
+ 
     int sum = num1 + num2 + num3 + num4 + num5;
 
     if (sum > 50) {
@@ -158,27 +172,31 @@ int main() {
 
     return 0;
 }
+
+
+
 Question 5:
+5.user se ek input lena hai agr wo input positive hota hai to fir ek function call karna hai usme 2 values lena hai aur unka swap karna hai, agar input -ve hota hai to fir ek function call karna hai aur check karna hai ki wo entered number pallindrome hai ya nahi, agar wo 0 hota hai to fir ek function call karna hai aur usme ek input lena hai and check karna hai ki wo input powerof2 hai ya nahi.
  
 #include <iostream>
 #include <string>
 using namespace std;
 
-// Function to swap two values
+ 
 void swapValues(int& a, int& b) {
     int temp = a;
     a = b;
     b = temp;
 }
 
-// Function to check if a number is a palindrome
+ 
 bool isPalindrome(int n) {
     string str = to_string(n);
     string rev = string(str.rbegin(), str.rend());
     return str == rev;
 }
 
-// Function to check if a number is a power of 2
+ 
 bool isPowerOf2(int n) {
     return (n > 0) && (n & (n - 1)) == 0;
 }
@@ -205,13 +223,18 @@ int main() {
 
     return 0;
 }
+
+
 Question 6:
+User se 4 input lena hai, inka sum nikalna hai. Agar sum > 100 hota hai to ek function call karna hai, jisme 3 input lena hai aur unka average return karna hai. Agar returned average > 50 hai to ek aur function call karke factorial nikalna hai aur check karna hai wo prime number hai ya nahi.
+
+User se 2 input lena hai, inka product nikalna hai. Agar product < 50 hota hai to ek function call karna hai, jisme product aur ek user input ko add karna hai aur result ko return karna hai. Agar returned value odd hai to ek aur function call karke us value ko square karna hai aur result return karna hai.
  
 #include <iostream>
 #include <cmath>
 using namespace std;
 
-// Function to calculate factorial of a number
+ 
 int factorial(int n) {
     int fact = 1;
     for (int i = 1; i <= n; i++) {
@@ -220,7 +243,7 @@ int factorial(int n) {
     return fact;
 }
 
-// Function to check if a number is prime
+ 
 bool isPrime(int n) {
     if (n <= 1) return false;
     for (int i = 2; i <= sqrt(n); i++) {
@@ -234,7 +257,7 @@ int main() {
     cout << "Enter four numbers: ";
     cin >> num1 >> num2 >> num3 >> num4;
 
-    // Calculate the sum of four numbers
+ 
     int sum = num1 + num2 + num3 + num4;
 
     if (sum > 100) {
@@ -262,13 +285,17 @@ int main() {
 
     return 0;
 }
+
+
 Question 7:
- 
+ User se 6 input lena hai, inka maximum nikalna hai. Agar maximum > 75 hota hai to ek function call karna hai, jisme maximum aur 2 user inputs ko subtract karna hai aur result return karna hai. Agar result negative hai to absolute value nikal kar factorial return karna hai.
+User se 3 input lena hai, inka sum nikalna hai. Agar sum 0 hota hai to ek function call karna hai aur check karna hai ki wo perfect square hai ya nahi. Agar perfect square hai to uska square root nikalna hai aur result return karna hai.
+
 #include <iostream>
 #include <cmath>
 using namespace std;
 
-// Function to calculate factorial of a number
+ 
 int factorial(int n) {
     int fact = 1;
     for (int i = 1; i <= n; i++) {
@@ -277,7 +304,7 @@ int factorial(int n) {
     return fact;
 }
 
-// Function to check if a number is a perfect square
+ 
 bool isPerfectSquare(int n) {
     int sqRoot = sqrt(n);
     return (sqRoot * sqRoot == n);
@@ -288,7 +315,7 @@ int main() {
     cout << "Enter six numbers: ";
     cin >> num1 >> num2 >> num3 >> num4 >> num5 >> num6;
 
-    // Find the maximum of the six numbers
+ 
     int maxNum = max({num1, num2, num3, num4, num5, num6});
 
     if (maxNum > 75) {
@@ -315,12 +342,17 @@ int main() {
 
     return 0;
 }
+
+
 Question 8:
+User se 5 input lena hai, inka average nikalna hai. Agar average > 60 hai to ek function call karna hai, jisme 3 input lena hai aur unka product return karna hai. Agar product even hai to uska half return karna hai, agar odd hai to uska double return karna hai.
+
+User se 4 input lena hai, inka minimum nikalna hai. Agar minimum < 10 hai to ek function call karna hai aur minimum ko 5 se multiply karna hai aur result return karna hai. Agar result > 50 hai to factorial nikalna hai aur result return karna hai.
  
 #include <iostream>
 using namespace std;
 
-// Function to calculate product of three numbers
+ 
 int product(int a, int b, int c) {
     return a * b * c;
 }
@@ -330,7 +362,7 @@ int main() {
     cout << "Enter five numbers: ";
     cin >> num1 >> num2 >> num3 >> num4 >> num5;
 
-    // Calculate average of the five numbers
+ 
     float avg = (num1 + num2 + num3 + num4 + num5) / 5.0;
 
     if (avg > 60) {
@@ -362,12 +394,18 @@ int main() {
 
     return 0;
 }
+
+
+
 Question 9:
+User se 3 input lena hai, unka sum nikalna hai. Agar sum > 80 hai to ek function call karna hai, jisme 2 input lena hai aur unka division result return karna hai. Agar result integer hai to us integer ka reverse return karna hai.
+
+User se 2 input lena hai, inka difference nikalna hai. Agar difference < 0 hai to absolute value return karna hai. Agar difference even hai to ek function call karna hai aur us value ka cube return karna hai.
  
 #include <iostream>
 using namespace std;
 
-// Function to check if a number is an integer
+ 
 bool isInteger(float num) {
     return num == static_cast<int>(num);
 }
@@ -377,7 +415,7 @@ int main() {
     cout << "Enter three numbers: ";
     cin >> num1 >> num2 >> num3;
 
-    // Calculate sum of three numbers
+ 
     int sum = num1 + num2 + num3;
 
     if (sum > 80) {
@@ -402,13 +440,19 @@ int main() {
 
     return 0;
 }
+
+
+
 Question 11:
+User se 4 input lena hai, inka product nikalna hai. Agar product > 1000 hai to ek function call karna hai, jisme product aur ek user input ko divide karna hai aur result return karna hai. Agar result fraction hai to uska ceiling value return karna hai.
+
+User se 3 input lena hai, inka average nikalna hai. Agar average < 25 hai to ek function call karna hai aur check karna hai ki wo prime number hai ya nahi. Agar prime hai to uska factorial return karna hai.
  
 #include <iostream>
 #include <cmath>
 using namespace std;
 
-// Function to calculate factorial of a number
+ 
 int factorial(int n) {
     int fact = 1;
     for (int i = 1; i <= n; i++) {
@@ -417,7 +461,7 @@ int factorial(int n) {
     return fact;
 }
 
-// Function to check if a number is prime
+ 
 bool isPrime(int n) {
     if (n <= 1) return false;
     for (int i = 2; i <= sqrt(n); i++) {
@@ -431,7 +475,7 @@ int main() {
     cout << "Enter four numbers: ";
     cin >> num1 >> num2 >> num3 >> num4;
 
-    // Calculate the product of the four numbers
+ 
     int prod = num1 * num2 * num3 * num4;
 
     if (prod > 1000) {
@@ -455,13 +499,19 @@ int main() {
 
     return 0;
 }
+
+
+
+
 Question 12:
- 
-#include <iostream>
-#include <cmath>
+User se 5 input lena hai, inka maximum nikalna hai. Agar maximum > 90 hota hai to ek function call karna hai, jisme maximum aur ek user input ko subtract karna hai aur result return karna hai. Agar result positive hai to us value ka cube return karna hai.
+
+User se 4 input lena hai, inka sum nikalna hai. Agar sum < 50 hai to ek function call karna hai aur sum ka reverse nikalna hai aur result return karna hai. Agar reverse value even hai to uska half return karna hai.
+
+#include <bits/stdc++.h>
 using namespace std;
 
-// Function to calculate factorial of a number
+ 
 int factorial(int n) {
     int fact = 1;
     for (int i = 1; i <= n; i++) {
@@ -470,7 +520,7 @@ int factorial(int n) {
     return fact;
 }
 
-// Function to check if a number is prime
+ 
 bool isPrime(int n) {
     if (n <= 1) return false;
     for (int i = 2; i <= sqrt(n); i++) {
@@ -484,7 +534,7 @@ int main() {
     cout << "Enter five numbers: ";
     cin >> num1 >> num2 >> num3 >> num4 >> num5;
 
-    // Find the maximum of the five numbers
+ 
     int maxNum = max({num1, num2, num3, num4, num5});
 
     if (maxNum > 90) {
@@ -516,17 +566,24 @@ int main() {
 
     return 0;
 }
+
+
+
+
 Question 13:
+User se 3 input lena hai, inka average nikalna hai. Agar average > 40 hai to ek function call karna hai, jisme 2 input lena hai aur unka product return karna hai. Agar product negative hai to absolute value return karna hai.
+
+User se 2 input lena hai, inka maximum nikalna hai. Agar maximum > 30 hai to ek function call karna hai aur check karna hai wo prime hai ya nahi. Agar prime hai to factorial return karna hai.
  
 #include <iostream>
 using namespace std;
 
-// Function to calculate product of two numbers
+ 
 int product(int a, int b) {
     return a * b;
 }
 
-// Function to check if a number is prime
+ 
 bool isPrime(int n) {
     if (n <= 1) return false;
     for (int i = 2; i <= sqrt(n); i++) {
@@ -540,7 +597,7 @@ int main() {
     cout << "Enter three numbers: ";
     cin >> num1 >> num2 >> num3;
 
-    // Calculate average of the three numbers
+ 
     float avg = (num1 + num2 + num3) / 3.0;
 
     if (avg > 40) {
@@ -566,17 +623,24 @@ int main() {
 
     return 0;
 }
+
+
+
+
 Question 14:
+User se 4 input lena hai, inka sum nikalna hai. Agar sum > 150 hai to ek function call karna hai, jisme 3 input lena hai aur unka sum return karna hai. Agar returned sum even hai to factorial nikalna hai aur result return karna hai.
+
+User se 2 input lena hai, inka product nikalna hai. Agar product < 20 hai to ek function call karna hai aur product ko 5 se add karna hai aur result return karna hai.
  
 #include <iostream>
 using namespace std;
 
-// Function to calculate sum of three numbers
+ 
 int sum(int a, int b, int c) {
     return a + b + c;
 }
 
-// Function to calculate factorial of a number
+ 
 int factorial(int n) {
     int fact = 1;
     for (int i = 1; i <= n; i++) {
@@ -590,7 +654,7 @@ int main() {
     cout << "Enter four numbers: ";
     cin >> num1 >> num2 >> num3 >> num4;
 
-    // Calculate the sum of four numbers
+ 
     int sumResult = sum(num1, num2, num3) + num4;
 
     if (sumResult > 150) {
@@ -613,18 +677,25 @@ int main() {
 
     return 0;
 }
+
+
+
+
 Question 15:
+User se 6 input lena hai, inka average nikalna hai. Agar average > 70 hai to ek function call karna hai, jisme 4 input lena hai aur unka maximum return karna hai. Agar maximum > 50 hai to uska cube return karna hai.
+
+User se 3 input lena hai, inka sum nikalna hai. Agar sum < 30 hai to ek function call karna hai aur sum ko 10 se multiply karna hai aur result return karna hai.
  
 #include <iostream>
 #include <algorithm>
 using namespace std;
 
-// Function to find maximum of four numbers
+ 
 int findMax(int a, int b, int c, int d) {
     return max({a, b, c, d});
 }
 
-// Function to calculate cube of a number
+ 
 int cube(int n) {
     return n * n * n;
 }
@@ -634,7 +705,7 @@ int main() {
     cout << "Enter six numbers: ";
     cin >> num1 >> num2 >> num3 >> num4 >> num5 >> num6;
 
-    // Calculate average of the six numbers
+ 
     float avg = (num1 + num2 + num3 + num4 + num5 + num6) / 6.0;
 
     if (avg > 70) {
@@ -654,55 +725,11 @@ int main() {
 
     return 0;
 }
+
+
+
+
+
 Question 16:
  
-#include <iostream>
-#include <cmath>
-using namespace std;
-
-// Function to calculate factorial of a number
-int factorial(int n) {
-    int fact = 1;
-    for (int i = 1; i <= n; i++) {
-        fact *= i;
-    }
-    return fact;
-}
-
-// Function to check if a number is prime
-bool isPrime(int n) {
-    if (n <= 1) return false;
-    for (int i = 2; i <= sqrt(n); i++) {
-        if (n % i == 0) return false;
-    }
-    return true;
-}
-
-int main() {
-    int num1, num2, num3, num4, num5;
-    cout << "Enter five numbers: ";
-    cin >> num1 >> num2 >> num3 >> num4 >> num5;
-
-    // Calculate product of five numbers
-    int prod = num1 * num2 * num3 * num4 * num5;
-
-    if (prod > 500) {
-        int x;
-        cout << "Enter another number: ";
-        cin >> x;
-        float result = static_cast<float>(prod) / x;
-        if (static_cast<int>(result) == result) { // Check if result is an integer
-            cout << "Factorial of result: " << factorial(static_cast<int>(result)) << endl;
-        }
-    } else {
-        int maxNum;
-        cout << "Enter four more numbers: ";
-        cin >> maxNum >> num2 >> num3 >> num4;
-        int maxVal = max({maxNum, num2, num3, num4});
-        if (maxVal > 20) {
-            cout << (isPrime(maxVal) ? "Double of maximum: " + to_string(maxVal * 2) : "Not prime") << endl;
-        }
-    }
-
-    return 0;
-}
+ 
