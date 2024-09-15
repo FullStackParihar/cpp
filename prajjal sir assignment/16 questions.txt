@@ -1,0 +1,708 @@
+ Question 1:
+ 
+#include <iostream>
+using namespace std;
+
+// Function to print a range of numbers
+void printRange(int start, int end) {
+    for (int i = start; i <= end; i++) {
+        cout << i << " ";
+    }
+    cout << endl;
+}
+
+int main() {
+    int num1, num2, num3;
+    cout << "Enter three numbers: ";
+    cin >> num1 >> num2 >> num3;
+
+    // Calculate average of the three numbers
+    float avg = (num1 + num2 + num3) / 3.0;
+
+    if (avg > 50) {
+        printRange(20, 30);
+    } else {
+        printRange(1, 20);
+    }
+
+    return 0;
+}
+Question 2:
+ 
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+// Function to calculate factorial of 5
+int factorial5() {
+    int fact = 1;
+    for (int i = 1; i <= 5; i++) {
+        fact *= i;
+    }
+    return fact;
+}
+
+// Function to check if a number is a power of 2
+bool isPowerOf2(int n) {
+    return (n > 0) && (n & (n - 1)) == 0;
+}
+
+// Function to print name
+void printName() {
+    cout << "YourName" << endl; // Replace "YourName" with your actual name
+}
+
+int main() {
+    int num1, num2, num3;
+    cout << "Enter three numbers: ";
+    cin >> num1 >> num2 >> num3;
+
+    // Find the maximum of the three numbers
+    int maxNum = max({num1, num2, num3});
+
+    if (maxNum == 5) {
+        cout << "Factorial of 5: " << factorial5() << endl;
+    } else if (maxNum == 2) {
+        cout << (isPowerOf2(maxNum) ? "Power of 2" : "Not a power of 2") << endl;
+    } else if (maxNum == 1) {
+        printName();
+    }
+
+    return 0;
+}
+Question 3:
+ 
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+// Function to calculate factorial of 4
+int factorial4() {
+    int fact = 1;
+    for (int i = 1; i <= 4; i++) {
+        fact *= i;
+    }
+    return fact;
+}
+
+// Function to reverse a number
+int reverseNumber(int n) {
+    int reversed = 0;
+    n = abs(n);  // Use the absolute value of the number
+    while (n > 0) {
+        reversed = reversed * 10 + n % 10;
+        n /= 10;
+    }
+    return reversed;
+}
+
+int main() {
+    int num1, num2, num3, num4;
+    cout << "Enter four numbers: ";
+    cin >> num1 >> num2 >> num3 >> num4;
+
+    // Calculate the sum of four numbers
+    int sum = num1 + num2 + num3 + num4;
+
+    if (sum < 0) {
+        // If sum is negative, reverse the second number (convert to positive if needed)
+        if (num2 < 0) {
+            num2 = abs(num2); // Convert to positive
+        }
+        cout << "Reverse of second number: " << reverseNumber(num2) << endl;
+    } else if (sum > 0) {
+        // If sum is positive, calculate the factorial of 4
+        cout << "Factorial of 4: " << factorial4() << endl;
+    } else {
+        // If sum is zero, calculate the product of the four numbers
+        int product = num1 * num2 * num3 * num4;
+        cout << "Product of the four numbers is: " << product << endl;
+    }
+
+    return 0;
+}
+Question 4:
+ 
+#include <iostream>
+using namespace std;
+
+// Function to calculate sum of numbers from 1 to n
+int sumTo50() {
+    return (50 * (50 + 1)) / 2;
+}
+
+// Function to check if a character is a vowel
+bool isVowel(char c) {
+    c = tolower(c);
+    return c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u';
+}
+
+int main() {
+    int num1, num2, num3, num4, num5;
+    cout << "Enter five numbers: ";
+    cin >> num1 >> num2 >> num3 >> num4 >> num5;
+
+    // Calculate the sum of the five numbers
+    int sum = num1 + num2 + num3 + num4 + num5;
+
+    if (sum > 50) {
+        cout << "Sum of numbers from 1 to 50: " << sumTo50() << endl;
+    } else if (sum < 50) {
+        char ch;
+        cout << "Enter a character: ";
+        cin >> ch;
+        cout << (isVowel(ch) ? "Vowel" : "Not a vowel") << endl;
+    } else {
+        cout << (sum % 2 == 0 ? "Even" : "Odd") << endl;
+    }
+
+    return 0;
+}
+Question 5:
+ 
+#include <iostream>
+#include <string>
+using namespace std;
+
+// Function to swap two values
+void swapValues(int& a, int& b) {
+    int temp = a;
+    a = b;
+    b = temp;
+}
+
+// Function to check if a number is a palindrome
+bool isPalindrome(int n) {
+    string str = to_string(n);
+    string rev = string(str.rbegin(), str.rend());
+    return str == rev;
+}
+
+// Function to check if a number is a power of 2
+bool isPowerOf2(int n) {
+    return (n > 0) && (n & (n - 1)) == 0;
+}
+
+int main() {
+    int num;
+    cout << "Enter a number: ";
+    cin >> num;
+
+    if (num > 0) {
+        int a, b;
+        cout << "Enter two values to swap: ";
+        cin >> a >> b;
+        swapValues(a, b);
+        cout << "Swapped values: " << a << " " << b << endl;
+    } else if (num < 0) {
+        cout << (isPalindrome(abs(num)) ? "Palindrome" : "Not a palindrome") << endl;
+    } else {
+        int checkNum;
+        cout << "Enter a number to check if it is a power of 2: ";
+        cin >> checkNum;
+        cout << (isPowerOf2(checkNum) ? "Power of 2" : "Not a power of 2") << endl;
+    }
+
+    return 0;
+}
+Question 6:
+ 
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+// Function to calculate factorial of a number
+int factorial(int n) {
+    int fact = 1;
+    for (int i = 1; i <= n; i++) {
+        fact *= i;
+    }
+    return fact;
+}
+
+// Function to check if a number is prime
+bool isPrime(int n) {
+    if (n <= 1) return false;
+    for (int i = 2; i <= sqrt(n); i++) {
+        if (n % i == 0) return false;
+    }
+    return true;
+}
+
+int main() {
+    int num1, num2, num3, num4;
+    cout << "Enter four numbers: ";
+    cin >> num1 >> num2 >> num3 >> num4;
+
+    // Calculate the sum of four numbers
+    int sum = num1 + num2 + num3 + num4;
+
+    if (sum > 100) {
+        int a, b, c;
+        cout << "Enter three more numbers: ";
+        cin >> a >> b >> c;
+        float avg = (a + b + c) / 3.0;
+        if (avg > 50) {
+            int fact = factorial(4);
+            cout << "Factorial of 4: " << fact << endl;
+            cout << (isPrime(fact) ? "Prime" : "Not prime") << endl;
+        }
+    } else {
+        int prod = num1 * num2;
+        cout << "Enter another number: ";
+        int x;
+        cin >> x;
+        int result = prod + x;
+        cout << "Result: " << result << endl;
+        if (result % 2 != 0) {
+            int square = result * result;
+            cout << "Square of result: " << square << endl;
+        }
+    }
+
+    return 0;
+}
+Question 7:
+ 
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+// Function to calculate factorial of a number
+int factorial(int n) {
+    int fact = 1;
+    for (int i = 1; i <= n; i++) {
+        fact *= i;
+    }
+    return fact;
+}
+
+// Function to check if a number is a perfect square
+bool isPerfectSquare(int n) {
+    int sqRoot = sqrt(n);
+    return (sqRoot * sqRoot == n);
+}
+
+int main() {
+    int num1, num2, num3, num4, num5, num6;
+    cout << "Enter six numbers: ";
+    cin >> num1 >> num2 >> num3 >> num4 >> num5 >> num6;
+
+    // Find the maximum of the six numbers
+    int maxNum = max({num1, num2, num3, num4, num5, num6});
+
+    if (maxNum > 75) {
+        int a, b;
+        cout << "Enter two more numbers: ";
+        cin >> a >> b;
+        int result = maxNum - a - b;
+        if (result < 0) {
+            result = abs(result);
+            cout << "Factorial of absolute value: " << factorial(result) << endl;
+        }
+    }
+
+    cout << "Enter three more numbers: ";
+    cin >> num1 >> num2 >> num3;
+    int sum = num1 + num2 + num3;
+    if (sum == 0) {
+        cout << (isPerfectSquare(sum) ? "Perfect square" : "Not a perfect square") << endl;
+        if (isPerfectSquare(sum)) {
+            int root = sqrt(sum);
+            cout << "Square root: " << root << endl;
+        }
+    }
+
+    return 0;
+}
+Question 8:
+ 
+#include <iostream>
+using namespace std;
+
+// Function to calculate product of three numbers
+int product(int a, int b, int c) {
+    return a * b * c;
+}
+
+int main() {
+    int num1, num2, num3, num4, num5;
+    cout << "Enter five numbers: ";
+    cin >> num1 >> num2 >> num3 >> num4 >> num5;
+
+    // Calculate average of the five numbers
+    float avg = (num1 + num2 + num3 + num4 + num5) / 5.0;
+
+    if (avg > 60) {
+        int a, b, c;
+        cout << "Enter three more numbers: ";
+        cin >> a >> b >> c;
+        int prod = product(a, b, c);
+        if (prod % 2 == 0) {
+            cout << "Half of product: " << (prod / 2) << endl;
+        } else {
+            cout << "Double of product: " << (prod * 2) << endl;
+        }
+    } else {
+        int minNum;
+        cout << "Enter a character: ";
+        cin >> minNum;
+        if (minNum < 10) {
+            cout << "Minimum number: " << minNum << endl;
+            int result = minNum * 5;
+            if (result > 50) {
+                int fact = 1;
+                for (int i = 1; i <= result; i++) {
+                    fact *= i;
+                }
+                cout << "Factorial of result: " << fact << endl;
+            }
+        }
+    }
+
+    return 0;
+}
+Question 9:
+ 
+#include <iostream>
+using namespace std;
+
+// Function to check if a number is an integer
+bool isInteger(float num) {
+    return num == static_cast<int>(num);
+}
+
+int main() {
+    int num1, num2, num3;
+    cout << "Enter three numbers: ";
+    cin >> num1 >> num2 >> num3;
+
+    // Calculate sum of three numbers
+    int sum = num1 + num2 + num3;
+
+    if (sum > 80) {
+        int a, b;
+        cout << "Enter two numbers: ";
+        cin >> a >> b;
+        float result = static_cast<float>(a) / b;
+        if (isInteger(result)) {
+            cout << "Reverse of integer result: " << result << endl;
+        }
+    } else {
+        int a, b;
+        cout << "Enter two numbers: ";
+        cin >> a >> b;
+        int diff = a - b;
+        if (diff < 0) {
+            cout << "Absolute value of difference: " << abs(diff) << endl;
+        } else if (diff % 2 == 0) {
+            cout << "Cube of difference: " << (diff * diff * diff) << endl;
+        }
+    }
+
+    return 0;
+}
+Question 11:
+ 
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+// Function to calculate factorial of a number
+int factorial(int n) {
+    int fact = 1;
+    for (int i = 1; i <= n; i++) {
+        fact *= i;
+    }
+    return fact;
+}
+
+// Function to check if a number is prime
+bool isPrime(int n) {
+    if (n <= 1) return false;
+    for (int i = 2; i <= sqrt(n); i++) {
+        if (n % i == 0) return false;
+    }
+    return true;
+}
+
+int main() {
+    int num1, num2, num3, num4;
+    cout << "Enter four numbers: ";
+    cin >> num1 >> num2 >> num3 >> num4;
+
+    // Calculate the product of the four numbers
+    int prod = num1 * num2 * num3 * num4;
+
+    if (prod > 1000) {
+        int x;
+        cout << "Enter another number: ";
+        cin >> x;
+        float result = static_cast<float>(prod) / x;
+        cout << "Division result: " << result << endl;
+        if (result != static_cast<int>(result)) {
+            cout << "Ceiling value of result: " << ceil(result) << endl;
+        }
+    } else {
+        float avg = (num1 + num2 + num3) / 3.0;
+        if (avg < 25) {
+            cout << (isPrime(avg) ? "Prime" : "Not prime") << endl;
+            if (isPrime(avg)) {
+                cout << "Factorial of average: " << factorial(static_cast<int>(avg)) << endl;
+            }
+        }
+    }
+
+    return 0;
+}
+Question 12:
+ 
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+// Function to calculate factorial of a number
+int factorial(int n) {
+    int fact = 1;
+    for (int i = 1; i <= n; i++) {
+        fact *= i;
+    }
+    return fact;
+}
+
+// Function to check if a number is prime
+bool isPrime(int n) {
+    if (n <= 1) return false;
+    for (int i = 2; i <= sqrt(n); i++) {
+        if (n % i == 0) return false;
+    }
+    return true;
+}
+
+int main() {
+    int num1, num2, num3, num4, num5;
+    cout << "Enter five numbers: ";
+    cin >> num1 >> num2 >> num3 >> num4 >> num5;
+
+    // Find the maximum of the five numbers
+    int maxNum = max({num1, num2, num3, num4, num5});
+
+    if (maxNum > 90) {
+        int x;
+        cout << "Enter another number: ";
+        cin >> x;
+        int result = maxNum - x;
+        cout << "Result: " << result << endl;
+        if (result > 0) {
+            cout << "Cube of result: " << (result * result * result) << endl;
+        }
+    } else {
+        int num1, num2, num3, num4;
+        cout << "Enter four more numbers: ";
+        cin >> num1 >> num2 >> num3 >> num4;
+        int sum = num1 + num2 + num3 + num4;
+        if (sum < 50) {
+            int reversed = 0, n = sum;
+            while (n > 0) {
+                reversed = reversed * 10 + n % 10;
+                n /= 10;
+            }
+            cout << "Reverse of sum: " << reversed << endl;
+            if (reversed % 2 == 0) {
+                cout << "Half of reverse: " << (reversed / 2) << endl;
+            }
+        }
+    }
+
+    return 0;
+}
+Question 13:
+ 
+#include <iostream>
+using namespace std;
+
+// Function to calculate product of two numbers
+int product(int a, int b) {
+    return a * b;
+}
+
+// Function to check if a number is prime
+bool isPrime(int n) {
+    if (n <= 1) return false;
+    for (int i = 2; i <= sqrt(n); i++) {
+        if (n % i == 0) return false;
+    }
+    return true;
+}
+
+int main() {
+    int num1, num2, num3;
+    cout << "Enter three numbers: ";
+    cin >> num1 >> num2 >> num3;
+
+    // Calculate average of the three numbers
+    float avg = (num1 + num2 + num3) / 3.0;
+
+    if (avg > 40) {
+        int a, b;
+        cout << "Enter two more numbers: ";
+        cin >> a >> b;
+        int prod = product(a, b);
+        if (prod < 0) {
+            cout << "Absolute value of product: " << abs(prod) << endl;
+        }
+    } else {
+        int maxNum;
+        cout << "Enter two more numbers: ";
+        cin >> maxNum >> num2;
+        int maxVal = max(maxNum, num2);
+        if (maxVal > 30) {
+            cout << (isPrime(maxVal) ? "Prime" : "Not prime") << endl;
+            if (isPrime(maxVal)) {
+                cout << "Factorial of maximum: " << factorial(maxVal) << endl;
+            }
+        }
+    }
+
+    return 0;
+}
+Question 14:
+ 
+#include <iostream>
+using namespace std;
+
+// Function to calculate sum of three numbers
+int sum(int a, int b, int c) {
+    return a + b + c;
+}
+
+// Function to calculate factorial of a number
+int factorial(int n) {
+    int fact = 1;
+    for (int i = 1; i <= n; i++) {
+        fact *= i;
+    }
+    return fact;
+}
+
+int main() {
+    int num1, num2, num3, num4;
+    cout << "Enter four numbers: ";
+    cin >> num1 >> num2 >> num3 >> num4;
+
+    // Calculate the sum of four numbers
+    int sumResult = sum(num1, num2, num3) + num4;
+
+    if (sumResult > 150) {
+        int a, b, c;
+        cout << "Enter three more numbers: ";
+        cin >> a >> b >> c;
+        int newSum = a + b + c;
+        if (newSum % 2 == 0) {
+            cout << "Factorial of sum: " << factorial(newSum) << endl;
+        }
+    } else {
+        int prod = num1 * num2;
+        if (prod < 20) {
+            cout << "Enter a number to add to the product: ";
+            int x;
+            cin >> x;
+            cout << "New product: " << (prod + x) << endl;
+        }
+    }
+
+    return 0;
+}
+Question 15:
+ 
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+// Function to find maximum of four numbers
+int findMax(int a, int b, int c, int d) {
+    return max({a, b, c, d});
+}
+
+// Function to calculate cube of a number
+int cube(int n) {
+    return n * n * n;
+}
+
+int main() {
+    int num1, num2, num3, num4, num5, num6;
+    cout << "Enter six numbers: ";
+    cin >> num1 >> num2 >> num3 >> num4 >> num5 >> num6;
+
+    // Calculate average of the six numbers
+    float avg = (num1 + num2 + num3 + num4 + num5 + num6) / 6.0;
+
+    if (avg > 70) {
+        int a, b, c, d;
+        cout << "Enter four more numbers: ";
+        cin >> a >> b >> c >> d;
+        int maxVal = findMax(a, b, c, d);
+        if (maxVal > 50) {
+            cout << "Cube of maximum value: " << cube(maxVal) << endl;
+        }
+    } else {
+        int sum = num1 + num2 + num3;
+        if (sum < 30) {
+            cout << "Sum multiplied by 10: " << (sum * 10) << endl;
+        }
+    }
+
+    return 0;
+}
+Question 16:
+ 
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+// Function to calculate factorial of a number
+int factorial(int n) {
+    int fact = 1;
+    for (int i = 1; i <= n; i++) {
+        fact *= i;
+    }
+    return fact;
+}
+
+// Function to check if a number is prime
+bool isPrime(int n) {
+    if (n <= 1) return false;
+    for (int i = 2; i <= sqrt(n); i++) {
+        if (n % i == 0) return false;
+    }
+    return true;
+}
+
+int main() {
+    int num1, num2, num3, num4, num5;
+    cout << "Enter five numbers: ";
+    cin >> num1 >> num2 >> num3 >> num4 >> num5;
+
+    // Calculate product of five numbers
+    int prod = num1 * num2 * num3 * num4 * num5;
+
+    if (prod > 500) {
+        int x;
+        cout << "Enter another number: ";
+        cin >> x;
+        float result = static_cast<float>(prod) / x;
+        if (static_cast<int>(result) == result) { // Check if result is an integer
+            cout << "Factorial of result: " << factorial(static_cast<int>(result)) << endl;
+        }
+    } else {
+        int maxNum;
+        cout << "Enter four more numbers: ";
+        cin >> maxNum >> num2 >> num3 >> num4;
+        int maxVal = max({maxNum, num2, num3, num4});
+        if (maxVal > 20) {
+            cout << (isPrime(maxVal) ? "Double of maximum: " + to_string(maxVal * 2) : "Not prime") << endl;
+        }
+    }
+
+    return 0;
+}
