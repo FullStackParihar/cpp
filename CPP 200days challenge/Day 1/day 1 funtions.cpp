@@ -1,3 +1,7 @@
+// Input Handling: Takes user input for a color.
+// Categorization: Converts input to lowercase and checks if it’s a Primary or Secondary color.
+// Output: Displays the color category.
+
 #include <bits/stdc++.h>
 
 using namespace std;
