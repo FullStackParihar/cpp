@@ -1,3 +1,6 @@
+// Character Counting: Analyzes a string to count the number of letters, digits, and other characters.
+// Output: Displays the counts for each category, providing a clear breakdown of the input string.
+
 #include <bits/stdc++.h>
 using namespace std;
 
