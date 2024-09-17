@@ -1,3 +1,7 @@
+// Input Handling: Takes a positive integer from the user.
+// Perfect Number Check: Determines if the number is a perfect number by summing its proper divisors.
+// Output: Informs whether the number is perfect or not.
+
 #include <iostream>
 using namespace std;
 
