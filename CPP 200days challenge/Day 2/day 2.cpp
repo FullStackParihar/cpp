@@ -1,3 +1,9 @@
+// Sum Calculation: Adds four user-input numbers.
+// Conditions:
+// If the sum is positive: Calculates the sum of the digits.
+// If the sum is zero: Outputs the square of each number.
+// If the sum is negative: Reverses the third number.
+
 #include <bits/stdc++.h>
 using namespace std;
 
