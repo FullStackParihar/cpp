@@ -1,4 +1,4 @@
-
+// Recursive Calculation: Computes the factorial of 5 using a recursive function.
 #include <bits/stdc++.h>
 using namespace std;
 
