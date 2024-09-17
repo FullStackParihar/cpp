@@ -1,3 +1,7 @@
+// Divisibility Check: Determines if a number is divisible by 4, 5, or 6.
+// Prime Check: Uses a function to check if the number is prime.
+// Output: The result tells if the number meets both conditions or not.
+
 #include <bits/stdc++.h>
 using namespace std;
 
