@@ -1,3 +1,6 @@
+// Sum Calculation: Loops through numbers from 1 to n and adds them together.
+// Output: Displays the sum of the first n numbers.
+
 #include <iostream>
 
 int sumOfNumbers(int n)
