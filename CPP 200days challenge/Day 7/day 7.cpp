@@ -2,8 +2,7 @@
 
 int sumOfNumbers(int n) {
     int sum = 0;
-
-    // Loop through numbers from 1 to n
+ 
     for (int i = 1; i <= n; ++i) {
         sum += i;
     }
@@ -12,7 +11,7 @@ int sumOfNumbers(int n) {
 }
 
 int main() {
-    int n = 5; // Example input
+    int n = 5; 
     
     int result = sumOfNumbers(n);
     std::cout << "The sum of the first " << n << " numbers is: " << result << std::endl;
