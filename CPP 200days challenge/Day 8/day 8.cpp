@@ -1,8 +1,6 @@
 #include <bits/stdc++.h>
-
 using namespace std;
 
- 
 int countDigits(int num) {
     int count = 0;
     while (num != 0) {
@@ -12,7 +10,6 @@ int countDigits(int num) {
     return count;
 }
 
- 
 int power(int base, int exp) {
     int result = 1;
     for (int i = 0; i < exp; i++) {
@@ -21,7 +18,6 @@ int power(int base, int exp) {
     return result;
 }
 
- 
 bool isArmstrong(int num) {
     int originalNum = num;
     int numDigits = countDigits(num);
