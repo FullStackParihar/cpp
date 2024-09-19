@@ -1,3 +1,7 @@
+// Count Digits: The code first calculates the number of digits in the input number.
+// Power Calculation: It then raises each digit to the power of the number of digits.
+// Armstrong Check: Finally, it checks if the sum of these powers equals the original number.
+
 #include <bits/stdc++.h>
 using namespace std;
 
