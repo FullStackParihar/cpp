@@ -1,4 +1,6 @@
- 
+//  Power Calculation: This function uses nested loops to compute powers through repeated addition.
+// Output: For example, 5 raised to the power of 3 returns 125.
+
 #include <bits/stdc++.h>
 using namespace std;
 
