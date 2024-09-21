@@ -2,9 +2,8 @@
 //  The challenge was to calculate both the natural logarithm (ln) and 
 //  the logarithm base 10 of a given number using built-in C++ math functions.
 
+#include <bits/stdc++.h>
  
-#include <iostream>
-#include <cmath>
 using namespace std;
 
 double naturalLog(double x) {
