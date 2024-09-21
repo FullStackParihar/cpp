@@ -1,5 +1,3 @@
- 
-
 // For Day 10 of my 200-day C++ coding challenge, I explored logarithmic functions in C++.
 //  The challenge was to calculate both the natural logarithm (ln) and 
 //  the logarithm base 10 of a given number using built-in C++ math functions.
