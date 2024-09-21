@@ -1,27 +1,34 @@
-// For Day 10 of my 200-day C++ coding challenge, I explored logarithmic functions in C++.
-//  The challenge was to calculate both the natural logarithm (ln) and 
-//  the logarithm base 10 of a given number using built-in C++ math functions.
+// Natural Logarithm: Calculates the log to the base e.
+// Logarithm Base 10: Computes the log to the base 10.
+// Logarithm Base 2: Computes the log to the base 2, useful in binary systems.
 
 #include <bits/stdc++.h>
- 
 using namespace std;
 
 double naturalLog(double x) {
-    return log(x);  // Natural logarithm (base e)
+    return log(x);  
 }
 
 double logBase10(double x) {
-    return log10(x);  // Logarithm (base 10)
+    return log10(x);   
+}
+
+double logBase2(double x) {
+    return log2(x); 
 }
 
 int main() {
     double x;
-    cout << "Enter a number to calculate its natural log and log base 10: ";
+    cout << "Enter a number to calculate its natural log, log base 10, and log base 2: ";
     cin >> x;
 
     cout << "Natural Log (ln): " << naturalLog(x) << endl;
     cout << "Log base 10: " << logBase10(x) << endl;
+    cout << "Log base 2: " << logBase2(x) << endl;
 
     return 0;
 }
+ 
+
+ 
  
