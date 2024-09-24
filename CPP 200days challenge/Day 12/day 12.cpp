@@ -1,3 +1,6 @@
+// Prime Factorization: The code finds all the prime factors of the input number.
+// Sum Calculation: It adds up all the prime factors and returns the sum.
+
 #include <bits/stdc++.h>
 using namespace std;
  
