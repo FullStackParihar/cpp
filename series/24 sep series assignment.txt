@@ -260,13 +260,81 @@ int main() {
 Sequence: 1, 2, 2, 4, 4, 8, 8,16,16, 32, 32 ...
 Formulation: a = 1, b = a + even index numbers
 DP Problem: Use dynamic programming to calculate the nth term where the pattern is determined by the sum of even and odd indexed numbers.
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int a = 1, b;
+    cout<<a<<" ";
+    int count = 1;
+    
+    for(int i = 1; i< 10; i++)
+    {
+        
+        if(i%2 != 0)
+        {
+            a =pow (2,count);
+            count ++;
+            cout<<a<<" ";
+        }
+        else
+        {
+            cout<<a<<" ";
+        }
+
+    }
+    
+    return 0;
+}
+
 10.Double Product Sequence
 Sequence: 1, 3, 6, 36 ...
 Formulation: a = 1, b = 3, c = a * b * 2
 Problem: Find the nth term where each term is the product of the previous two, doubled.
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int a = 1, b = 3, c;
+    cout<<a<<" "<<b <<" ";
+    
+    for(int i = 1; i< 10; i++)
+    {
+        c = a * b * 2;
+        cout<<c<<" ";
+        a = b;
+        b = c;
+   
+    }
+    
+    return 0;
+}
 
 
 11. Geometric Progression
 Sequence: 1, 3, 9, 27, 81, ...
 Formulation: a = 1, b = a * 3
 Problem: Calculate the nth term where each term is triple the previous.
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int a = 1, b;
+    cout<<a<<" ";
+    
+    for(int i = 1; i< 10; i++)
+    {
+        b = a * 3;
+        cout<<b<<" ";
+        a = b;
+
+    }
+    
+    return 0;
+}
