@@ -7,7 +7,7 @@ int gcd(int a, int b) {
         a = b;
         b = remainder;
     }
-    
+
     return a;
 }
  
@@ -25,5 +25,6 @@ int main() {
     cout << "The LCM of " << num1 << " and " << num2 << " is: " << result << endl;
 
     return 0;
+    
 }
  
