@@ -7,6 +7,7 @@ int gcd(int a, int b) {
         a = b;
         b = remainder;
     }
+    
     return a;
 }
  
