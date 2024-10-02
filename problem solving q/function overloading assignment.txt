@@ -1,0 +1,19 @@
+Define an overloaded function add that adds two integers, two floats, and concatenates two strings. Write a program to demonstrate the working of all overloaded functions.: Use different parameter types for overloading.
+: Create a function calculateArea that is overloaded to compute the area of a circle, rectangle, and triangle. Use appropriate arguments to represent each shape’s dimensions.
+: Overload a max function to return the maximum of two integers, two floats, and two strings (lexicographically). Demonstrate its usage in a program.
+: Implement an overloaded function print that prints an integer, a float, and a string. Write a program to test it with different data types.
+: Create an overloaded function multiply that multiplies two integers, two floats, and an integer with a float. Write a test program to verify the result of all overloaded functions.
+: Overload a function swapValues to swap two integers, two floats, and two characters. Write a program that demonstrates swapping of these data types.
+: Define a function compare that is overloaded to compare two integers, two floats, and two characters, returning the greater value in each case. Test the overloaded functions with appropriate examples.
+: Write a program that demonstrates function overloading by creating overloaded functions for subtract that subtract two integers, two floats, and two long integers.
+: Create an overloaded findAverage function that calculates the average of two integers, three integers, and four integers. Write a program to test the overloaded functions.
+: Overload the power function to compute the power of an integer raised to another integer, a float raised to an integer, and an integer raised to a float.
+: Write a program to overload the reverse function, which reverses an integer, a float, and a string. Demonstrate how function overloading works with each data type.
+: Overload the absolute function to return the absolute value of an integer, a float, and a double. Write a program to test all the overloaded versions.
+: Implement overloaded functions isEqual to check if two integers are equal, two characters are equal, and two floating-point numbers are equal (with precision tolerance).
+: Write a program that uses function overloading for a discount function that calculates the discount for different types of products based on integer, float, and string inputs representing product price and category.
+: Overload a function toUpper to convert a lowercase character to uppercase and a lowercase string to uppercase. Write a program to test both cases.
+: Define an overloaded function minValue that returns the minimum of two integers, two floats, and two double values. Test the program with different inputs.
+: Write a program to overload the printSquare function that prints the square of an integer, a float, and a double value.
+: Create an overloaded function concat to concatenate two strings, concatenate two integers, and concatenate an integer with a string. Write a test program for it.
+: Overload the calculate function that computes the sum of an integer array, a float array, and a double array using different argument types and sizes.
