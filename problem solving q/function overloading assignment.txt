@@ -1,9 +1,230 @@
 Define an overloaded function add that adds two integers, two floats, and concatenates two strings. Write a program to demonstrate the working of all overloaded functions.: Use different parameter types for overloading.
+
+// Define an overloaded function add that adds two integers, two floats, and 
+// concatenates two strings. Write a program to demonstrate the working of all overloaded functions.
+// : Use different parameter types for overloading.
+
+#include <bits/stdc++.h>
+using namespace std;
+
+void add(int a,int b){
+     cout<<a<<" "<<b<<endl;
+     
+}
+
+void add(float c, float d){
+     cout<<c<<" "<<d<<endl;
+      
+}
+
+void add(string e, string f){
+     cout<<e<<" "<<f<<endl;
+     
+}
+
+int main()
+{
+     int a=1,b=2;
+     float c=1.5,d=2.3;
+     string e="abc",f="def";
+     
+     add(a,b);
+     add(c,d);
+     add(e,f);
+
+    return 0;
+}
+
 : Create a function calculateArea that is overloaded to compute the area of a circle, rectangle, and triangle. Use appropriate arguments to represent each shape’s dimensions.
+
+// : Create a function calculateArea that is overloaded to compute the area of 
+// a circle, rectangle, and triangle. Use appropriate arguments to represent each shape’s dimensions.
+
+#include <bits/stdc++.h>
+using namespace std;
+
+void calculateArea(double radius){
+     cout<<"area of circle= "<<3.14*radius*radius<<endl;
+     
+}
+
+void calculateArea(float length , float width){
+     cout<<"area of rectangle= "<<length*width<<endl;
+      
+}
+
+void calculateArea(float base, float height ,float demo){
+     cout<<"area of triangle= "<<(0.5)*base*height<<endl;
+     
+}
+
+int main()
+{
+     double radius=25 ;
+     float length=5,width=4;
+     float base=35 ,height=4 ;
+     
+     calculateArea(radius);
+     calculateArea(length, width);
+     calculateArea(base,height,0);
+
+    return 0;
+}
 : Overload a max function to return the maximum of two integers, two floats, and two strings (lexicographically). Demonstrate its usage in a program.
+// : Overload a max function to return the maximum of two integers, two floats, 
+// and two strings (lexicographically). Demonstrate its usage in a program.
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int  max(int a, int b){
+ 
+     return (a > b) ? a : b;
+}
+
+float max(float a , float b){
+ 
+       return (a > b) ? a : b;
+}
+
+string max(string a, string b){
+      
+     return (a > b) ? a : b;
+}
+
+int main()
+{
+     int  int1=25 ,int2=20;
+     float float1=5,float2=4;
+     string string1="asdf" ,string2="dfghjk" ;
+     
+    int o =max(int1,int2);
+   float p  =max(float1,float2);
+   string i =max(string1,string2);
+   
+   cout<<"max of two integer:- "<<o<<endl;
+   cout<<"max of two float:- " <<p<<endl;
+   cout<<"max of two float:- "<<i<<endl;
+    
+     
+    return 0;
+}
 : Implement an overloaded function print that prints an integer, a float, and a string. Write a program to test it with different data types.
+#include <bits/stdc++.h>
+using namespace std;
+
+void print(int a) {
+    cout << "Integer: " << a << endl;
+}
+
+void print(float a) {
+    cout << "Float: " << a << endl;
+}
+
+void print(string a) {
+    cout << "String: " << a << endl;
+}
+
+int main() {
+    int intVar = 42;
+    float floatVar = 3.14f;
+    string strVar = "Hello, world!";
+    
+    print(intVar);
+    print(floatVar);
+    print(strVar);
+    
+    return 0;
+}
+
 : Create an overloaded function multiply that multiplies two integers, two floats, and an integer with a float. Write a test program to verify the result of all overloaded functions.
+#include <bits/stdc++.h>
+using namespace std;
+
+int multiply(int a, int b) {
+    return a * b;
+}
+
+float multiply(float a, float b) {
+    return a * b;
+}
+
+float multiply(int a, float b) {
+    return a * b;
+}
+
+int main() {
+    int intVar1 = 6, intVar2 = 7;
+    float floatVar1 = 3.5f, floatVar2 = 2.0f;
+    int intVar3 = 4;
+    float floatVar3 = 5.5f;
+    
+    int intResult = multiply(intVar1, intVar2);
+    float floatResult = multiply(floatVar1, floatVar2);
+    float intFloatResult = multiply(intVar3, floatVar3);
+    
+    cout << "Multiplication of two integers: " << intResult << endl;
+    cout << "Multiplication of two floats: " << floatResult << endl;
+    cout << "Multiplication of integer and float: " << intFloatResult << endl;
+    
+    return 0;
+}
+
 : Overload a function swapValues to swap two integers, two floats, and two characters. Write a program that demonstrates swapping of these data types.
+#include <bits/stdc++.h>
+using namespace std;
+
+int swapValues(int a, int b) {
+    int temp = a;
+    a = b;
+    b = temp;
+    return a;  
+}
+
+float swapValues(float a, float b) {
+    float temp = a;
+    a = b;
+    b = temp;
+    return a;
+}
+
+char swapValues(char a, char b) {
+    char temp = a;
+    a = b;
+    b = temp;
+    return a;
+}
+
+int main() {
+    int int1 = 10, int2 = 20;
+    float float1 = 1.5f, float2 = 2.5f;
+    char char1 = 'A', char2 = 'B';
+
+    cout << "Before swapping: " << endl;
+    cout << "Integers: " << int1 << ", " << int2 << endl;
+    cout << "Floats: " << float1 << ", " << float2 << endl;
+    cout << "Characters: " << char1 << ", " << char2 << endl;
+ 
+    int tempInt = int1;
+    int1 = swapValues(int1, int2);
+    int2 = swapValues(int2, tempInt);
+
+    float tempFloat = float1;
+    float1 = swapValues(float1, float2);
+    float2 = swapValues(float2, tempFloat);
+
+    char tempChar = char1;
+    char1 = swapValues(char1, char2);
+    char2 = swapValues(char2, tempChar);
+
+    cout << "\nAfter swapping: " << endl;
+    cout << "Integers: " << int1 << ", " << int2 << endl;
+    cout << "Floats: " << float1 << ", " << float2 << endl;
+    cout << "Characters: " << char1 << ", " << char2 << endl;
+
+    return 0;
+}
+
 : Define a function compare that is overloaded to compare two integers, two floats, and two characters, returning the greater value in each case. Test the overloaded functions with appropriate examples.
 : Write a program that demonstrates function overloading by creating overloaded functions for subtract that subtract two integers, two floats, and two long integers.
 : Create an overloaded findAverage function that calculates the average of two integers, three integers, and four integers. Write a program to test the overloaded functions.
