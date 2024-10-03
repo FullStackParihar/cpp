@@ -154,14 +154,14 @@ float multiply(int a, float b) {
 }
 
 int main() {
-    int intVar1 = 6, intVar2 = 7;
-    float floatVar1 = 3.5f, floatVar2 = 2.0f;
-    int intVar3 = 4;
-    float floatVar3 = 5.5f;
+    int int1 = 6, int2 = 7;
+    float float1 = 3.5f, float2 = 2.0f;
+    int int3 = 4;
+    float float3 = 5.5f;
     
-    int intResult = multiply(intVar1, intVar2);
-    float floatResult = multiply(floatVar1, floatVar2);
-    float intFloatResult = multiply(intVar3, floatVar3);
+    int intResult = multiply(int1, int2);
+    float floatResult = multiply(float1, float2);
+    float intFloatResult = multiply(int3, float3);
     
     cout << "Multiplication of two integers: " << intResult << endl;
     cout << "Multiplication of two floats: " << floatResult << endl;
