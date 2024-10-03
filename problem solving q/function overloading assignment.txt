@@ -171,28 +171,29 @@ int main() {
 }
 
 : Overload a function swapValues to swap two integers, two floats, and two characters. Write a program that demonstrates swapping of these data types.
+
 #include <bits/stdc++.h>
 using namespace std;
 
-int swapValues(int a, int b) {
+void swap(int a, int b) {
     int temp = a;
     a = b;
     b = temp;
-    return a;  
+    cout << "After swapping: " << a << ", " << b << endl;
 }
 
-float swapValues(float a, float b) {
+void swap(float a, float b) {
     float temp = a;
     a = b;
     b = temp;
-    return a;
+    cout << "After swapping: " << a << ", " << b << endl;
 }
 
-char swapValues(char a, char b) {
+void swap(char a, char b) {
     char temp = a;
     a = b;
     b = temp;
-    return a;
+    cout << "After swapping: " << a << ", " << b << endl;
 }
 
 int main() {
@@ -200,30 +201,18 @@ int main() {
     float float1 = 1.5f, float2 = 2.5f;
     char char1 = 'A', char2 = 'B';
 
-    cout << "Before swapping: " << endl;
+    cout << "Before swapping:" << endl;
     cout << "Integers: " << int1 << ", " << int2 << endl;
     cout << "Floats: " << float1 << ", " << float2 << endl;
     cout << "Characters: " << char1 << ", " << char2 << endl;
- 
-    int tempInt = int1;
-    int1 = swapValues(int1, int2);
-    int2 = swapValues(int2, tempInt);
 
-    float tempFloat = float1;
-    float1 = swapValues(float1, float2);
-    float2 = swapValues(float2, tempFloat);
-
-    char tempChar = char1;
-    char1 = swapValues(char1, char2);
-    char2 = swapValues(char2, tempChar);
-
-    cout << "\nAfter swapping: " << endl;
-    cout << "Integers: " << int1 << ", " << int2 << endl;
-    cout << "Floats: " << float1 << ", " << float2 << endl;
-    cout << "Characters: " << char1 << ", " << char2 << endl;
+    swap(int1, int2);
+    swap(float1, float2);
+    swap(char1, char2);
 
     return 0;
 }
+
 
 : Define a function compare that is overloaded to compare two integers, two floats, and two characters, returning the greater value in each case. Test the overloaded functions with appropriate examples.
 : Write a program that demonstrates function overloading by creating overloaded functions for subtract that subtract two integers, two floats, and two long integers.
