@@ -215,15 +215,391 @@ int main() {
 
 
 : Define a function compare that is overloaded to compare two integers, two floats, and two characters, returning the greater value in each case. Test the overloaded functions with appropriate examples.
+#include <bits/stdc++.h>
+using namespace std;
+
+int compare(int a, int b) {
+    return (a > b) ? a : b;
+}
+
+float compare(float a, float b) {
+    return (a > b) ? a : b;
+}
+
+char compare(char a, char b) {
+    return (a > b) ? a : b;
+}
+
+int main() {
+    int int1 = 10, int2 = 20;
+    float float1 = 1.5f, float2 = 2.5f;
+    char char1 = 'A', char2 = 'B';
+
+    cout << "Comparing integers: " << compare(int1, int2) << endl;
+    cout << "Comparing floats: " << compare(float1, float2) << endl;
+    cout << "Comparing characters: " << compare(char1, char2) << endl;
+
+    return 0;
+}
+
 : Write a program that demonstrates function overloading by creating overloaded functions for subtract that subtract two integers, two floats, and two long integers.
+#include <bits/stdc++.h>
+using namespace std;
+
+int subtract(int a, int b) {
+    return a - b;
+}
+
+float subtract(float a, float b) {
+    return a - b;
+}
+
+long subtract(long a, long b) {
+    return a - b;
+}
+
+int main() {
+    int int1 = 20, int2 = 10;
+    float float1 = 5.5f, float2 = 2.3f;
+    long long1 = 100000L, long2 = 50000L;
+
+    cout << "Subtracting integers: " << subtract(int1, int2) << endl;
+    cout << "Subtracting floats: " << subtract(float1, float2) << endl;
+    cout << "Subtracting long integers: " << subtract(long1, long2) << endl;
+
+    return 0;
+}
+
 : Create an overloaded findAverage function that calculates the average of two integers, three integers, and four integers. Write a program to test the overloaded functions.
+#include <bits/stdc++.h>
+using namespace std;
+
+float findAverage(int a, int b) {
+    return (a + b) / 2.0;
+}
+
+float findAverage(int a, int b, int c) {
+    return (a + b + c) / 3.0;
+}
+
+float findAverage(int a, int b, int c, int d) {
+    return (a + b + c + d) / 4.0;
+}
+
+int main() {
+    int num1 = 10, num2 = 20, num3 = 30, num4 = 40;
+
+    cout << "Average of two integers: " << findAverage(num1, num2) << endl;
+    cout << "Average of three integers: " << findAverage(num1, num2, num3) << endl;
+    cout << "Average of four integers: " << findAverage(num1, num2, num3, num4) << endl;
+
+    return 0;
+}
+
 : Overload the power function to compute the power of an integer raised to another integer, a float raised to an integer, and an integer raised to a float.
+#include <bits/stdc++.h>
+using namespace std;
+
+int power(int base, int exp) {
+    return pow(base, exp);
+}
+
+float power(float base, int exp) {
+    return pow(base, exp);
+}
+
+float power(int base, float exp) {
+    return pow(base, exp);
+}
+
+int main() {
+    int intBase = 2, intExp = 3;
+    float floatBase = 2.5f;
+    float floatExp = 3.5f;
+
+    cout << "Integer power (int^int): " << power(intBase, intExp) << endl;
+    cout << "Float power (float^int): " << power(floatBase, intExp) << endl;
+    cout << "Mixed power (int^float): " << power(intBase, floatExp) << endl;
+
+    return 0;
+}
+
 : Write a program to overload the reverse function, which reverses an integer, a float, and a string. Demonstrate how function overloading works with each data type.
+#include <bits/stdc++.h>
+using namespace std;
+
+int reverse(int n) {
+    int rev = 0;
+    while (n > 0) {
+        rev = rev * 10 + n % 10;
+        n /= 10;
+    }
+    return rev;
+}
+
+float reverse(float n) {
+    string s = to_string(n);
+    reverse(s.begin(), s.end());
+    return stof(s);
+}
+
+string reverse(string s) {
+    reverse(s.begin(), s.end());
+    return s;
+}
+
+int main() {
+    int intVal = 1234;
+    float floatVal = 12.34f;
+    string strVal = "hello";
+
+    cout << "Original integer: " << intVal << ", Reversed: " << reverse(intVal) << endl;
+    cout << "Original float: " << floatVal << ", Reversed: " << reverse(floatVal) << endl;
+    cout << "Original string: " << strVal << ", Reversed: " << reverse(strVal) << endl;
+
+    return 0;
+}
+
 : Overload the absolute function to return the absolute value of an integer, a float, and a double. Write a program to test all the overloaded versions.
+#include <bits/stdc++.h>
+using namespace std;
+
+int absolute(int n) {
+    return (n < 0) ? -n : n;
+}
+
+float absolute(float n) {
+    return (n < 0) ? -n : n;
+}
+
+double absolute(double n) {
+    return (n < 0) ? -n : n;
+}
+
+int main() {
+    int intVal = -10;
+    float floatVal = -12.34f;
+    double doubleVal = -123.456;
+
+    cout << "Absolute of integer: " << absolute(intVal) << endl;
+    cout << "Absolute of float: " << absolute(floatVal) << endl;
+    cout << "Absolute of double: " << absolute(doubleVal) << endl;
+
+    return 0;
+}
+
 : Implement overloaded functions isEqual to check if two integers are equal, two characters are equal, and two floating-point numbers are equal (with precision tolerance).
+#include <bits/stdc++.h>
+using namespace std;
+
+bool isEqual(int a, int b) {
+    return a == b;
+}
+
+bool isEqual(char a, char b) {
+    return a == b;
+}
+
+bool isEqual(float a, float b, float tolerance = 0.0001f) {
+    return fabs(a - b) <= tolerance;
+}
+
+int main() {
+    int int1 = 10, int2 = 10;
+    char char1 = 'A', char2 = 'A';
+    float float1 = 1.23456f, float2 = 1.23457f;
+
+    cout << "Are integers equal? " << (isEqual(int1, int2) ? "Yes" : "No") << endl;
+    cout << "Are characters equal? " << (isEqual(char1, char2) ? "Yes" : "No") << endl;
+    cout << "Are floating-point numbers equal? " << (isEqual(float1, float2) ? "Yes" : "No") << endl;
+
+    return 0;
+}
+
 : Write a program that uses function overloading for a discount function that calculates the discount for different types of products based on integer, float, and string inputs representing product price and category.
+#include <bits/stdc++.h>
+using namespace std;
+
+float discount(int price) {
+    return price * 0.10;
+}
+
+float discount(float price) {
+    return price * 0.15f;
+}
+
+float discount(string category) {
+    if (category == "electronics") {
+        return 20.0;
+    } else if (category == "clothing") {
+        return 15.0;
+    } else {
+        return 5.0;
+    }
+}
+
+int main() {
+    int intPrice = 100;
+    float floatPrice = 200.50f;
+    string category = "electronics";
+
+    cout << "Discount for integer price: INR " << discount(intPrice) << endl;
+    cout << "Discount for float price: INR " << discount(floatPrice) << endl;
+    cout << "Discount for category (" << category << "): INR " << discount(category) << endl;
+
+    return 0;
+}
+
 : Overload a function toUpper to convert a lowercase character to uppercase and a lowercase string to uppercase. Write a program to test both cases.
+#include <bits/stdc++.h>
+using namespace std;
+
+char toUpper(char ch) {
+    return toupper(ch);
+}
+
+string toUpper(string str) {
+    for (char &ch : str) {
+        ch = toupper(ch);
+    }
+    return str;
+}
+
+int main() {
+    char lowerChar = 'a';
+    string lowerStr = "hello world";
+
+    cout << "Uppercase character: " << toUpper(lowerChar) << endl;
+    cout << "Uppercase string: " << toUpper(lowerStr) << endl;
+
+    return 0;
+}
+
 : Define an overloaded function minValue that returns the minimum of two integers, two floats, and two double values. Test the program with different inputs.
+#include <bits/stdc++.h>
+using namespace std;
+
+int minValue(int a, int b) {
+    return (a < b) ? a : b;
+}
+
+float minValue(float a, float b) {
+    return (a < b) ? a : b;
+}
+
+double minValue(double a, double b) {
+    return (a < b) ? a : b;
+}
+
+int main() {
+    int int1 = 10, int2 = 20;
+    float float1 = 5.5f, float2 = 2.2f;
+    double double1 = 15.5, double2 = 10.7;
+
+    cout << "Minimum of two integers: " << minValue(int1, int2) << endl;
+    cout << "Minimum of two floats: " << minValue(float1, float2) << endl;
+    cout << "Minimum of two doubles: " << minValue(double1, double2) << endl;
+
+    return 0;
+}
+
 : Write a program to overload the printSquare function that prints the square of an integer, a float, and a double value.
+#include <bits/stdc++.h>
+using namespace std;
+
+void printSquare(int n) {
+    cout << "Square of integer " << n << " is: " << n * n << endl;
+}
+
+void printSquare(float n) {
+    cout << "Square of float " << n << " is: " << n * n << endl;
+}
+
+void printSquare(double n) {
+    cout << "Square of double " << n << " is: " << n * n << endl;
+}
+
+int main() {
+    int intVal = 4;
+    float floatVal = 5.5f;
+    double doubleVal = 6.7;
+
+    printSquare(intVal);
+    printSquare(floatVal);
+    printSquare(doubleVal);
+
+    return 0;
+}
+
 : Create an overloaded function concat to concatenate two strings, concatenate two integers, and concatenate an integer with a string. Write a test program for it.
+#include <bits/stdc++.h>
+using namespace std;
+
+string concat(string a, string b) {
+    return a + b;
+}
+
+string concat(int a, int b) {
+    return to_string(a) + to_string(b);
+}
+
+string concat(int a, string b) {
+    return to_string(a) + b;
+}
+
+int main() {
+    string str1 = "Hello, ";
+    string str2 = "World!";
+    int int1 = 123;
+    int int2 = 456;
+
+    cout << "Concatenation of two strings: " << concat(str1, str2) << endl;
+    cout << "Concatenation of two integers: " << concat(int1, int2) << endl;
+    cout << "Concatenation of integer and string: " << concat(int1, str1) << endl;
+
+    return 0;
+}
+
 : Overload the calculate function that computes the sum of an integer array, a float array, and a double array using different argument types and sizes.
+#include <bits/stdc++.h>
+using namespace std;
+
+int calculate(int arr[], int size) {
+    int sum = 0;
+    for (int i = 0; i < size; i++) {
+        sum += arr[i];
+    }
+    return sum;
+}
+
+float calculate(float arr[], int size) {
+    float sum = 0.0f;
+    for (int i = 0; i < size; i++) {
+        sum += arr[i];
+    }
+    return sum;
+}
+
+double calculate(double arr[], int size) {
+    double sum = 0.0;
+    for (int i = 0; i < size; i++) {
+        sum += arr[i];
+    }
+    return sum;
+}
+
+int main() {
+    int intArr[] = {1, 2, 3, 4, 5};
+    float floatArr[] = {1.5f, 2.5f, 3.5f};
+    double doubleArr[] = {1.1, 2.2, 3.3, 4.4};
+
+    int intSize = sizeof(intArr) / sizeof(intArr[0]);
+    int floatSize = sizeof(floatArr) / sizeof(floatArr[0]);
+    int doubleSize = sizeof(doubleArr) / sizeof(doubleArr[0]);
+
+    cout << "Sum of integer array: " << calculate(intArr, intSize) << endl;
+    cout << "Sum of float array: " << calculate(floatArr, floatSize) << endl;
+    cout << "Sum of double array: " << calculate(doubleArr, doubleSize) << endl;
+
+    return 0;
+}
