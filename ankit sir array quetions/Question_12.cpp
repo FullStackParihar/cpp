@@ -9,7 +9,7 @@ int main()
 {
     int arr1[]= {1, 2,2,1};
     int arr2[]= {2,2};
-    //  int n = sizeof(arr)/sizeof(arr[0]);
+ 
     
     for(int i=0;i<4;i++){
         for(int j=1;j<2;j++){
