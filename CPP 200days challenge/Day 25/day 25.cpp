@@ -4,7 +4,6 @@ using namespace std;
 int main()
 {
     int arr[6] = {34, -50, 42, 14, -5, 86};
-
     int maxSum = 0;
     int sum = 0;
 
