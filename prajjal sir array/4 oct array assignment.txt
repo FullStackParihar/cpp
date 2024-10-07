@@ -1,0 +1,90 @@
+
+1. Create a vector of integers with 10 elements, all initialized to 0.
+vector<int> vec(10, 0);
+---------------------------------------------------------------------
+2. Create a vector of strings with 5 elements, each initialized to "empty".
+vector<string> vec(5, "empty");
+---------------------------------------------------------------------
+3. Initialize a vector with the values {1, 2, 3, 4, 5}.
+vector<int> vec = {1, 2, 3, 4, 5};
+----------------------------------------------------------------------
+4. Create a vector of floating-point numbers and fill it with 10 values entered by the user.
+vector<float> vec(10);
+void fillfloat(vector<float> &vec) {
+    cout << "Enter 10 floating-point numbers: ";
+    for (int i = 0; i < 10; i++) {
+        cin >> vec[i];
+    }
+}
+------------------------------------------------------------------------
+5. Print all elements of a vector of integers.
+void printvec(const vector<int> &vec) {
+    for (int i : vec) {
+        cout << i << " ";
+    }
+    cout << endl;
+}
+--------------------------------------------------------------------------
+6. Find the size of a vector of doubles and display it.
+void printdouble(const vector<double> &vec) {
+    cout << "Size of vector: " << vec.size() << endl;
+}
+---------------------------------------------------------------------------
+7. Check if a vector of integers is empty and print the result.
+void checkempty(const vector<int> &vec) {
+    if (vec.empty()) {
+        cout << "Vector is empty" << endl;
+    } else {
+        cout << "Vector is not empty" << endl;
+    }
+}
+------------------------------------------------------------------------------
+8. Add an element to the end of a vector of strings and print the updated vector.
+void addstring(vector<string> &vec, const string &endstr) {
+    vec.push_back(endstr);
+    for (const string &s : vec) {
+        cout << s << " ";
+    }
+    cout << endl;
+}
+------------------------------------------------------------------------------
+9. Remove the last element from a vector of integers and print the vector.
+void removeint(vector<int> &vec) {
+    if (!vec.empty()) {
+        vec.pop_back();
+    }
+    for (int i : vec) {
+        cout << i << " ";
+    }
+    cout << endl;
+}
+--------------------------------------------------------------------------------
+10. Clear all elements from a vector of characters and check if it is empty.
+void clearCharVector(vector<char> &vec) {
+    vec.clear();
+    if (vec.empty()) {
+        cout << "Character vector is now empty" << endl;
+    }
+}
+------------------------------------------------------------------------------------
+11. Use the at method to safely access the 7th element of a vector of doubles.
+void seventhelement(vector<double> &vec) {
+    if (vec.size() >= 7) {
+        cout << "7th element is: " << vec.at(6) << endl; 
+    } else {
+        cout << "Vector has less than 7 elements" << endl;
+    }
+}
+
+int main() {
+
+    fillfloat(vecFloat);
+
+    printint(vecInt);
+
+    vector<double> vecDouble = {1.1, 2.2, 3.3, 4.4, 5.5, 6.6, 7.7, 8.8};
+    printDoubleVectorSize(vecDouble);
+    accessSeventhElement(vecDouble);
+
+    checkempty(vecInt);
+}
