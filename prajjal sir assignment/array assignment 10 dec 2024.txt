@@ -1,0 +1,115 @@
+// Merge two sorted arrays but only up to the first n/2 elements of each
+void mergeArrays() {
+    vector<int> A = {1, 3, 5, 7};
+    vector<int> B = {2, 4, 6, 8};
+    vector<int> res;
+    
+    int n1 = A.size() / 2;
+    int n2 = B.size() / 2;
+    int i = 0, j = 0;
+    while (i < n1 && j < n2) {
+        if (A[i] < B[j]) {
+            res.push_back(A[i]);
+            i++;
+        } else {
+            res.push_back(B[j]);
+            j++;
+        }
+    }
+    while (i < n1) {
+        res.push_back(A[i]);
+        i++;
+    }
+    while (j < n2) {
+        res.push_back(B[j]);
+        j++;
+    }
+    for (auto it : res) {
+        cout << it << " ";
+    }
+    cout << endl;
+}
+
+// Check if each number in an array is a palindrome
+void checkPalindrome() {
+    vector<int> arr = {121, 232, 345, 454, 1221, 345};
+    vector<string> result;
+    for (int num : arr) {
+        int original = num, reversed = 0;
+        while (num > 0) {
+            reversed = reversed * 10 + num % 10;
+            num /= 10;
+        }
+        result.push_back(reversed == original ? "Yes" : "No");
+    }
+    for (auto it : result) {
+        cout << it << " ";
+    }
+    cout << endl;
+}
+
+// Move all zeros in an array to the end
+void moveZerosToEnd() {
+    vector<int> arr = {0, 5, 0, 3, 4, 0, 1};
+    vector<int> result;
+    for (int num : arr) {
+        if (num != 0) {
+            result.push_back(num);
+        }
+    }
+    while (result.size() < arr.size()) {
+        result.push_back(0);
+    }
+    for (auto it : result) {
+        cout << it << " ";
+    }
+    cout << endl;
+}
+
+// Replace each element in the array with the product of all other elements
+void replaceWithProduct() {
+    vector<int> arr = {1, 2, 3, 4};
+    vector<int> result(arr.size(), 1);
+    int totalProduct = 1, zeroCount = 0;
+
+    for (int num : arr) {
+        if (num != 0) {
+            totalProduct *= num;
+        } else {
+            zeroCount++;
+        }
+    }
+
+    for (int i = 0; i < arr.size(); ++i) {
+        if (zeroCount > 1) {
+            result[i] = 0;
+        } else if (arr[i] == 0) {
+            result[i] = totalProduct;
+        } else {
+            result[i] = zeroCount == 1 ? 0 : totalProduct / arr[i];
+        }
+    }
+
+    for (auto it : result) {
+        cout << it << " ";
+    }
+    cout << endl;
+}
+
+// Find the smallest missing positive integer
+void smallestMissingPositive() {
+    vector<int> arr = {3, 4, -1, 1};
+    set<int> s;
+    for (int num : arr) {
+        if (num > 0) {
+            s.insert(num);
+        }
+    }
+
+    int smallest = 1;
+    while (s.find(smallest) != s.end()) {
+        smallest++;
+    }
+
+    cout << smallest << endl;
+}
