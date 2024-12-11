@@ -1,0 +1,84 @@
+// initialize an integer array of size 5 with values {10, 20, 30, 40, 50}
+int arr1[5] = {10, 20, 30, 40, 50};
+
+// declare an integer array of size 10 and initialize all elements to 0 using a single statement
+int arr2[10] = {0};
+
+// create an array of size n (user input) and initialize elements with the square of their indices
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Enter the size of the array: ";
+    cin >> n;
+
+    int* arr3 = new int[n];
+    for (int i = 0; i < n; ++i) {
+        arr3[i] = i * i;
+    }
+
+    cout << "Array elements: ";
+    for (int i = 0; i < n; ++i) {
+        cout << arr3[i] << " ";
+    }
+
+    delete[] arr3; // free allocated memory
+    return 0;
+}
+
+// initialize another array arr_copy[] with the same values as arr[] = {1, 2, 3, 4, 5}
+int arr[] = {1, 2, 3, 4, 5};
+int arr_copy[5];
+for (int i = 0; i < 5; ++i) {
+    arr_copy[i] = arr[i];
+}
+
+// create an empty vector and add the numbers 1, 2, 3, 4, 5 using push_back
+#include <vector>
+using namespace std;
+
+int main_vector() {
+    vector<int> vec;
+    vec.push_back(1);
+    vec.push_back(2);
+    vec.push_back(3);
+    vec.push_back(4);
+    vec.push_back(5);
+
+    
+    for (int i = 0; i < vec.size(); ++i) {
+        cout << vec[i] << " ";
+    }
+    return 0;
+}
+
+// remove the last element of a vector and handle the case when the vector is empty
+#include <vector>
+#include <iostream>
+using namespace std;
+
+int main_remove() {
+    vector<int> vec = {1, 2, 3, 4, 5};
+
+    if (!vec.empty()) {
+        vec.pop_back(); 
+    } else {
+        cout << "The vector is already empty." << endl;
+    }
+
+  
+    for (int i = 0; i < vec.size(); ++i) {
+        cout << vec[i] << " ";
+    }
+
+   
+    vec.clear();
+    if (!vec.empty()) {
+        vec.pop_back();
+    } else {
+        cout << "The vector is empty." << endl;
+    }
+
+    return 0;
+}
