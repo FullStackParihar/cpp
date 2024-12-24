@@ -1,6 +1,6 @@
-o Explanation: List all possible subarrays of the given array.
-o Given Array: {1, 2}
-o Expected Subarrays: {1}, {2}, {1, 2}
+// o Explanation: List all possible subarrays of the given array.
+// o Given Array: {1, 2}
+// o Expected Subarrays: {1}, {2}, {1, 2}
 
 
 

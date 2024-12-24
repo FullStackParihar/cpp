@@ -1,0 +1,399 @@
+q.1.Write a program to create a new array where each element is the sum of the current element and twice its index.
+
+// q.1.Write a program to create a new array where each element is 
+// the sum of the current element and twice its index.
+
+#include <bits/stdc++.h>
+using namespace std;
+int main() 
+{
+    int arr[]={10,20,30,40,50};
+    int n=sizeof(arr)/sizeof(arr[0]);
+    int res[n];
+    for(int i=0;i<n;i++) 
+    {
+        res[i]=arr[i]+2*i;
+    }
+    for(int i=0;i<n;i++) 
+    {
+        cout<<res[i]<<endl;
+    }
+    return 0;
+}
+---------------------------------------------------------------------------------------------------------------------------------
+q.2.Create a program to count how many elements in an array are divisible by a given number and store the count in a variable.
+
+// q.2.Create a program to count how many elements in an array are divisible by a
+// given number and store the count in a variable.
+
+#include <bits/stdc++.h>
+using namespace std;
+int main() 
+{
+    int arr[]={12,15,20,25,30,35};
+    int n=sizeof(arr)/sizeof(arr[0]);
+    int divided=5,count=0;
+    for (int i=0;i<n;i++) 
+    {
+        if(arr[i]%divided==0) 
+        {
+            count++;
+        }
+    }
+    cout<< count;
+    return 0;
+}
+
+---------------------------------------------------------------------------------------------------------------------------------
+q.3.Write a program to generate a new array where each element is the product of all elements in the original array except the current one.
+
+// q.3.Write a program to generate a new array where each element is the product of all
+// elements in the original array except the current one.
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int arr[]={1,2,3,4,5};
+    int n=sizeof(arr)/sizeof(arr[0]);
+    int res[n];
+    for(int i=0;i<n;i++) 
+    {
+        int product=1;
+        for (int j=0;j<n;j++) 
+        {
+            if(i!=j) 
+            {
+                product *= arr[j];
+            }
+        }
+        res[i]=product;
+    }
+    for(int i=0;i<n;i++) 
+    {
+        cout<<res[i]<<" ";
+    }
+    return 0;
+}
+---------------------------------------------------------------------------------------------------------------------------------
+q.4.Create a program to replace all elements in an array that are less than 0 with their absolute value and store the results in a new array.
+
+// q.4.Create a program to replace all elements in an array that are less than 0 with their 
+// absolute value and store the results in a new array.
+#include <bits/stdc++.h>
+using namespace std;
+int main() 
+{
+    int arr[]={-2,7,-4,3,-5};
+    int n=sizeof(arr)/sizeof(arr[0]);
+    int res[n];
+    for(int i=0;i<n;i++) 
+    {
+        if(arr[i]<0)
+        {
+            res[i]=-arr[i];
+        }
+        else 
+        {
+            res[i]=arr[i];
+        }
+    }
+    for(int i=0;i<n;i++)
+    {
+        cout<<res[i]<<" ";
+    }
+    return 0;
+}
+---------------------------------------------------------------------------------------------------------------------------------
+q.5.Write a program to find the first occurrence of a given element in an array and return its index or -1 if not found.
+
+// q.5.Write a program to find the first occurrence of a given element in an array 
+// and return its index or -1 if not found.
+
+#include <bits/stdc++.h>
+using namespace std;
+int find(vector<int>&arr,int key)
+{
+    int index=0;
+    for(auto it:arr) 
+    {
+        if(it==key) 
+        {
+            return index;
+        }
+        index++;
+    }
+    return -1;
+}
+int main() 
+{
+    vector<int>arr={1,2,3,4,5,6};
+    int key=9;
+    cout<<find(arr,key);
+    return 0;
+}
+---------------------------------------------------------------------------------------------------------------------------------
+q.6.Create a program to generate a new array where each element is the sum of all previous elements in the original array.
+
+
+// q.6.Create a program to generate a new array where each element is the sum of 
+// all previous elements in the original array.
+
+
+#include <bits/stdc++.h>
+using namespace std;
+int main() 
+{
+    int arr[]={1,2,3,4,5};
+    int n=sizeof(arr)/sizeof(arr[0]);
+    int res[n];
+    res[0]=arr[0];
+    for(int i=1;i<n;i++) 
+    {
+        res[i]=res[i-1]+arr[i];
+    }
+    for(int i=0;i<n;i++) 
+    {
+        cout<<res[i]<<" ";
+    }
+    return 0;
+}
+
+---------------------------------------------------------------------------------------------------------------------------------
+q.7.Write a program to replace every even number in an array with 0 and every odd number with 1, storing the result in a new array.
+// q.7.Write a program to replace every even number in an array with 0 and 
+// every odd number with 1, storing the result in a new array.
+#include <bits/stdc++.h>
+using namespace std;
+int main() 
+{
+    int arr[]={2,2,3,4,5,6};
+    int n=sizeof(arr)/sizeof(arr[0]);
+    int res[n];
+    for(int i=0;i<n;i++) 
+    {
+        if(arr[i]%2==0) 
+        {
+            res[i]=0;
+        } 
+        else 
+        {
+            res[i]=1;
+        }
+    }
+    for(int i=0;i<n;i++) 
+    {
+        cout<<res[i]<< " ";
+    }
+    return 0;
+}
+---------------------------------------------------------------------------------------------------------------------------------
+q.8.Create a program to generate a new array where each element is the difference between the maximum value in the original array and the current element.
+
+// q.8.Create a program to generate a new array where each element is the difference between 
+// the maximum value in the original array and the current element.
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() 
+{
+    int arr[] = {2, 5, 7, 2, 8};
+    int n = sizeof(arr) / sizeof(arr[0]);
+
+    int maxval = arr[0];
+    for (int i = 1; i < n; i++) {
+        if (arr[i] > maxval) {
+            maxval = arr[i];
+        }
+    }
+
+    for (int i = 0; i < n; i++) {
+        cout << (maxval - arr[i]) << " ";
+    }
+
+    return 0;
+}
+
+---------------------------------------------------------------------------------------------------------------------------------
+q.9.Write a program to find the smallest number in an array and replace every element greater than it with the smallest number in a new array.
+
+//q.9.Write a program to find the smallest number in an array and replace every element 
+//greater than it with the smallest number in a new array.
+
+#include <bits/stdc++.h>
+using namespace std;
+int main() 
+{
+    int arr[]={2,5,7,2,8};
+    int n=sizeof(arr)/sizeof(arr[0]),minval = *min_element(arr,arr+n),res[n];
+    for(int i=0;i<n;i++) 
+    {
+        if(arr[i]>minval) 
+        {
+            res[i]=minval;
+        } 
+        else 
+        {
+            res[i]=arr[i];
+        }
+    }
+    for(int i=0;i<n;i++) 
+    {
+        cout<<res[i]<<" ";
+    }
+    return 0;
+}
+---------------------------------------------------------------------------------------------------------------------------------
+q.10.Create a program to generate a new array by shifting each element in the original array to the right, with the last element moving to the first position.
+
+
+#include <bits/stdc++.h>
+using namespace std;
+int main() 
+{
+    int arr[]={2,5,7,2,8};
+    int n=sizeof(arr)/sizeof(arr[0]);
+    int res[n];
+    res[0]=arr[n-1];
+    for(int i=1;i<n;i++) 
+    {
+      res[i]=arr[i-1];
+    }
+    for(int i=0;i<n;i++) 
+    {
+        cout<<res[i]<<" ";
+    }
+    return 0;
+}
+
+---------------------------------------------------------------------------------------------------------------------------------
+q.11.Write a program to count the number of elements in an array that are greater than the average of the array and store the count in a variable.
+
+
+#include <bits/stdc++.h>
+using namespace std;
+int main() 
+{
+    int arr[]={3,5,7,2,8};
+    int n=sizeof(arr)/sizeof(arr[0]);
+    int sum=0;
+    for(int i=0;i<n;i++) 
+    {
+        sum += arr[i];
+    }
+    int average=sum/int(n);
+    int count=0;
+    for(int i=0;i<n;i++) 
+    {
+        if(arr[i]>=average) 
+        {
+            count++;
+        }
+    }
+    cout<<count;
+    return 0;
+}
+---------------------------------------------------------------------------------------------------------------------------------
+q.12.Create a program to find all the duplicate elements in an array and store them in a new array.
+
+
+#include<bits/stdc++.h>
+using namespace std;
+void findallduplicate(int arr[],int n)
+{
+    int uqcount=0;
+    int res[100];
+    int k=0;
+    bool isunique = true;
+    for(int i=0; i<n; i++)
+    {
+        isunique = true;
+        for(int j=0; j<n; j++)
+        {
+            if(i!=j && arr[i]==arr[j])
+            {
+                isunique = false;
+                break;
+            }
+        }
+        if(isunique==false) {
+            res[k]=arr[i];
+            k++;
+        }
+    }
+    for(auto it:res)
+    {
+      if(it!=0)
+      {
+          cout<<it<<" ";
+      }
+    }
+}
+int main()
+{
+    int arr[]= {1,2,3,4,4,5,5,5,6,6,1,2,2};
+    int n = sizeof(arr)/sizeof(int);
+    findallduplicate(arr,n);
+}
+
+---------------------------------------------------------------------------------------------------------------------------------
+q.13.Write a program to generate a new array where each element is the cumulative product of the elements up to that index in the original array.
+
+
+#include<bits/stdc++.h>
+using namespace std;
+void cumulative(int arr[], int n)
+{
+    int res[n];
+    res[0]=arr[0];
+    for(int i=1;i<n;i++) 
+    {
+        res[i]=res[i-1]*arr[i];
+    }
+    for(int i=0;i<n;i++) 
+    {
+        cout<<res[i]<<" ";
+    }
+}
+int main() 
+{
+    int arr[] = {1, 2, 3, 4, 5};
+    int n=sizeof(arr)/sizeof(arr[0]);
+    cumulative(arr,n);
+    return 0;
+}
+---------------------------------------------------------------------------------------------------------------------------------
+q.14.Create a program to replace every element in an array with its binary equivalent stored as a string in a new array.
+---------------------------------------------------------------------------------------------------------------------------------
+q.15.Write a program to generate a new array where each element is the square of the difference between the element and the average of the original array.
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+	int arr[] = {2, 8, 15, 16, 23, 42};
+	int n = sizeof(arr) / sizeof(arr[0]);
+	int res[n];
+
+	int sum = 0;
+	for (int i = 0; i < n; i++) {
+		sum += arr[i];
+	}
+	int average = sum / n;
+
+
+	for (int i = 0; i < n; i++) {
+		int diff = arr[i] - average;
+		res[i] = diff * diff;
+	}
+
+	for (int i = 0; i < n; i++) {
+		cout << res[i] << " ";
+	}
+
+	return 0;
+}
+
+---------------------------------------------------------------------------------------------------------------------------------
