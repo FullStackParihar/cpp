@@ -1,0 +1,215 @@
+1.
+#include <bits/stdc++.h>
+using namespace std;
+
+bool ispoweroftwo(int n) {
+    if (n <= 0) return false;
+    for (int i = 1; i <= n; i *= 2) {  
+        if (i == n) {
+            return true;
+        }
+    }
+    return false;
+}
+
+int main() {
+    int arr[] = {1, 2, 3, 4, 8, 16};
+    int n = sizeof(arr) / sizeof(arr[0]);
+
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " is " << (ispoweroftwo(arr[i]) ? "" : "not ") << "a power of 2 "<< endl;
+    }
+
+    return 0;
+}
+
+2.
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int arr[] = {1, 2, 3, 4, 5};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    int sum = 0;
+    for (int i = 0; i < n; i++) {
+        if (i % 2 == 0) {
+            sum += arr[i];
+        }
+    }
+    cout << "Sum of elements at even indices  " << sum << endl;
+    return 0;
+}
+
+
+3.
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int arr[] = {1, 2, 3};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    int sum = 0;
+    for (int i = 0; i < n; i++) {
+        int cube = arr[i] * arr[i] * arr[i];
+        sum += cube;
+    }
+    cout << "Sum of cubes of elements " << sum << endl;
+    return 0;
+}
+
+
+
+4.
+#include <bits/stdc++.h>
+using namespace std;
+
+int digitSum(int n) {
+    int sum = 0;
+    while (n > 0) {
+        sum += n % 10;
+        n /= 10;
+    }
+    return sum;
+}
+
+int main() {
+    int arr[] = {18, 24, 35};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    for (int i = 0; i < n; i++) {
+        int sum = digitSum(arr[i]);
+        if (arr[i] % sum == 0) {
+            cout << arr[i] << " is divisible by the sum of its digits"<<endl;
+        } else {
+            cout << arr[i] << " is not divisible by the sum of its digits"<<endl;
+        }
+    }
+    return 0;
+}
+
+
+5.
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int arr[] = {10, 15, 20, 25, 30, 35};
+    int n = sizeof(arr) / sizeof(arr[0]);
+ 
+    int maxOdd = arr[1];
+    int minOdd = arr[1];
+ 
+    for (int i = 1; i < n; i += 2) {
+    
+        for (int j = 1; j < n; j += 2) {
+            if (arr[j] > maxOdd) {
+                maxOdd = arr[j];
+            }
+            if (arr[j] < minOdd) {
+                minOdd = arr[j];
+            }
+        }
+    }
+
+    cout << "Max at odd indices  " << maxOdd << endl;
+    cout << "Min at odd indices  " << minOdd << endl;
+
+    return 0;
+}
+
+
+7.
+#include <bits/stdc++.h>
+using namespace std;
+
+int sumprimefactors(int n) {
+    int sum = 0;
+
+    for (int i = 2; i <= n; i++) {
+        if (n % i == 0) {  
+            bool isprime = true;
+            for (int j = 2; j * j <= i; j++) {  
+                if (i % j == 0) {
+                    isprime = false;
+                    break;
+                }
+            }
+            if (isprime) {
+                sum += i;
+            }
+        }
+    }
+    return sum;
+}
+
+int main() {
+    int arr[] = {12, 30, 42};
+    int arr_size = sizeof(arr) / sizeof(arr[0]);
+
+    for (int i = 0; i < arr_size; i++) {
+        cout << "Sum of prime factors of " << arr[i] << " " << sumprimefactors(arr[i]) << endl;
+    }
+
+    return 0;
+}
+
+8.
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int arr[] = {2, 3, 4, 5, 6};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    int product = 1;
+
+    for (int i = 0; i < n; i++) {
+        if (arr[i] % 2 == 0) {
+            product *= arr[i];
+        }
+    }
+
+    cout << "Product of even elements" << product << endl;
+    return 0;
+}
+
+
+9.
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int arr[] = {1, 2, 3, 4, 5};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    int sumeven = 0, productOdd = 1;
+
+    for (int i = 0; i < n; i++) {
+        if (arr[i] % 2 == 0)
+            sumeven += arr[i];
+        else
+            productOdd *= arr[i];
+    }
+
+    cout << "Sum of even numbers   " << sumeven << endl;
+    cout << "Product of odd numbers   " << productOdd << endl;
+    return 0;
+}
+
+10.
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int arr[] = {10, 20, 30, 40, 50};
+    int n = sizeof(arr) / sizeof(arr[0]);
+
+    for (int i = 0; i < n; i++) {
+        arr[i] = i * i;
+    }
+
+    cout << "Replaced elements :";
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+
+    return 0;
+}
