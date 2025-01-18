@@ -1,0 +1,100 @@
+// Initialize an integer array arr of size 5 with values 1, 2, 3, 4, 5.
+
+
+// hashtag#include <iostream>
+// using namespace std;
+// int main()
+// { int arr[5]={1,2,3,4,5};
+// for(auto it:arr)
+// {
+// cout<<it<<" ";
+// }
+// return 0;
+// }
+
+// Create an integer array arr of size 6 where only the first 3 elements are initialized to 10, 20, 30. What are the remaining elements initialized to?
+
+// hashtag#include<bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+// int arr[6]={10,20,30};
+// for(auto it:arr){
+// cout<<it<<" ";
+// }
+// }
+
+// Declare and initialize a character array chars with the string "Hello" and print each character individually.
+
+
+// hashtag#include<bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+// char arr[]={'h','e','l','l','o'};
+// for(auto it:arr){
+// cout<<it<<" ";
+// }
+// }
+
+
+// Take an integer n from the user and initialize an integer array of size n with the squares of the numbers 1 to n.
+
+// hashtag#include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+// int n; 
+// cin>>n;
+// int arr[n];
+// for(int i=0;i<n;i++)
+// {
+// cin>>arr[i];
+// }
+// }
+
+
+// Create an integer array arr of size 5 and initialize it with numbers 5, 10, 15, 20, 25 using a loop.
+
+// hashtag#include<bits/stdc++.h>
+// using namespace std;
+// int main() {
+// int arr[5];
+// for(int i=0;i<=5;i++){
+// arr[i] =(i+1)*5;
+// }
+// for(int i=0;i<5;i++){
+// cout<<arr[i]<<" ";
+// }
+
+// return 0;
+// }
+
+// Create an integer array arr of size 5 and initialize all elements to -1 in a single line.
+
+// hashtag#include<bits/stdc++.h>
+// using namespace std;
+// int main() {
+// int arr[5]={-1,-1,-1,-1,-1};
+// for(auto it:arr){
+// cout <<it<<" ";
+// }
+
+// return 0;
+// }
+
+
+// Initialize an array arr2 by copying the values from another array arr1 which contains {1, 2, 3, 4, 5}.
+
+// hashtag#include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+// int arr1[5]={1,2,3,4,5};
+// int arr2[5];
+
+// for(int i=0;i<5;i++){
+// arr2[i]=arr1[i];
+// }
+// for(int i=0;i<5;i++){
+// cout<<arr2[i]<<" ";
+// }
+// return 0;

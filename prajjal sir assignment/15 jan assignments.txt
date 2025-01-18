@@ -1,0 +1,143 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+void printarr(vector<int>&arr)
+{
+    for(auto it:arr)
+    {
+        cout<<it<<" ";
+    }
+    cout<<"\n";
+}
+
+int cummulativearr(vector<int>&arr,int x)
+{
+    vector<int>res;
+    for(auto it:arr)
+    {
+        if(it%x==0)
+        {
+            res.push_back(it);
+        }
+    }
+    printarr(res);
+    return res.size();
+}
+
+int main()
+{
+    vector<int>arr={4,10,15,20,12,13,25,55,19,23,85,75,100} ;
+    int x=5;
+    cout<<cummulativearr(arr,x);
+   
+}
+
+ 
+#include<bits/stdc++.h>
+using namespace std;
+
+void printarr(vector<int>&arr)
+{
+    for(auto it:arr)
+    {
+        cout<<it<<" ";
+    }
+    cout<<"\n";
+}
+void digitcount(vector<int>&res,int n)
+{
+    while(n)
+        {
+            res.push_back(n%10);
+            n/=10;
+        }
+}
+
+int cummulativearr(vector<int>&arr)
+{
+    vector<int>res;
+    for(auto it:arr)
+    {
+        digitcount(res,it);
+    }
+    printarr(res);
+    return res.size();
+}
+
+int main()
+{
+    vector<int>arr={445,10,15,20,12,13,25,55,19,23,85,75,100} ;
+    cout<<cummulativearr(arr);
+   
+}
+
+ 
+#include<bits/stdc++.h>
+using namespace std;
+
+void printarr(vector<int>&arr)
+{
+    for(auto it:arr)
+    {
+        cout<<it<<" ";
+    }
+    cout<<"\n";
+}
+
+vector<int> cummulativearr(vector<int>&arr)
+{
+    vector<int>odd;
+    vector<int>eve;
+    for(auto it:arr)
+    {
+        if(it%2==0)
+        {
+            eve.push_back(it);
+        }
+        else
+            odd.push_back(it);
+    }
+   
+    printarr(eve);
+    printarr(odd);
+    int oddsize = eve.size();
+    int evesize = odd.size();
+    return {oddsize,evesize};//encapsulation
+}
+
+int main()
+{
+    vector<int>arr={12,34,56,58,52,56,55,51,53,81,83,9,3,5,96,36,78} ;
+    vector<int>res = cummulativearr(arr);
+    printarr(res);
+}
+ 
+#include<bits/stdc++.h>
+using namespace std;
+
+void printarr(vector<int>&arr)
+{
+    for(auto it:arr)
+    {
+        cout<<it<<" ";
+    }
+    cout<<"\n";
+}
+
+vector<int> cummulativearr(vector<int>&arr)
+{
+    vector<int>res;
+   for(int i=1;i<arr.size();i++)
+   {
+       res.push_back(arr[i]-arr[i-1]);
+       
+   }
+   return res;
+}
+
+int main()
+{
+    vector<int>arr={10, 20, 15, 25} ;
+    vector<int>res = cummulativearr(arr);
+    printarr(res);
+}

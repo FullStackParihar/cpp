@@ -1,0 +1,210 @@
+ 
+#include<bits/stdc++.h>
+using namespace std;
+int factorial(int n)
+{
+    int fact=1;
+    for(int i=1;i<=n;i++)
+    {
+        fact*=i;
+    }
+    return fact;
+}
+vector<int> getfactorial(vector<int>arr)
+{
+    vector<int>res;
+    for(auto it:arr)
+    {
+        res.push_back(factorial(it));
+    }
+    return res;
+}
+int main()
+{
+    vector<int>arr={1,2,3,4,5,6,7,8};
+    vector<int>res = getfactorial(arr);
+    for(auto it:res)
+    {
+        cout<<it<<" ";
+    }
+}
+
+ 
+#include<bits/stdc++.h>
+using namespace std;
+bool isprimenumber(int n)
+{
+    if(n<=1)
+    {
+        return false;
+    }
+    for(int i=2;i*i<=n;i++)
+    {
+        if(n%i==0)
+         return false;
+    }
+    return true;
+}
+int main()
+{
+    vector<int>arr={1,2,3,4,5,6,7,8};
+    vector<int>res;
+    for(auto it:arr)
+    {
+        if(isprimenumber(it))
+            res.push_back(it);
+    }
+    for(auto it:res)
+    {
+        cout<<it<<" ";
+    }
+}
+
+ 
+#include<bits/stdc++.h>
+using namespace std;
+bool isselfdividing(int n)
+{
+    int temp = n;
+    int l;
+    while(n)
+    {
+        l= n%10;
+        if(l==0)
+            return false;
+        if(temp%l!=0)
+            return false;
+        n/=10;
+    }
+    return true;
+   
+}
+int main()
+{
+    vector<int>arr={1,2,3,4,5,6,7,8,21,25,128,56,55,127};
+    vector<int>res;
+    for(auto it:arr)
+    {
+        if(isselfdividing(it))
+            res.push_back(it);
+    }
+    for(auto it:res)
+    {
+        cout<<it<<" ";
+    }
+}
+
+ 
+#include<bits/stdc++.h>
+using namespace std;
+bool isselfdividing(int n)
+{
+    int temp = n;
+    int l;
+    while(n)
+    {
+        l= n%10;
+        if(l==0)
+            return false;
+        if(temp%l!=0)
+            return false;
+        n/=10;
+    }
+    return true;
+   
+}
+int main()
+{
+    int left = 2, right =190;
+    vector<int>res;
+    for(int i=left;i<=right;i++)
+    {
+        if(isselfdividing(i))
+            res.push_back(i);
+    }
+    for(auto it:res)
+    {
+        cout<<it<<" ";
+    }
+}
+
+ 
+#include<bits/stdc++.h>
+using namespace std;
+
+bool isprime(int n)
+{
+    if(n<1)
+        return false;
+    for(int i=2;i*i<=n;i++)
+    {
+        if(n%i==0)
+            return false;
+    }
+    return true;
+}
+
+void printarr1d(vector<int>arr)
+{
+    for(auto it:arr)
+    {
+        cout<<it<<" ";
+    }
+    cout<<"\n";
+}
+
+void printarr2d(vector<vector<int>>arr)
+{
+    for(auto vec:arr)//2d
+    {
+        for(auto it:vec)//1d
+        {
+            cout<<it<<" ";//ele
+        }
+        cout<<"\n";
+    }
+    cout<<"\n";
+}
+
+vector<int> calculate(vector<int>arr)
+{
+    vector<int>res;
+    for(auto it:arr)
+    {
+      if(!isprime(it))
+      {
+          res.push_back(it);
+      }
+    }
+    return res;
+}
+
+vector<int> getfactors(int n)
+{
+    vector<int>res;
+    for(int i=2;i<n;i++)
+    {
+        if(n%i==0)
+            res.push_back(i);
+    }
+    return res;
+}
+
+vector<vector<int>> factors(vector<int>arr)
+{
+    vector<vector<int>>res;//2d
+    for(auto it:arr)
+    {
+        res.push_back(getfactors(it));
+    }
+    return res;  
+}
+
+int main()
+{
+   vector<int>arr={1,2,3,4,5,6,78,1,6,95,19};
+   vector<int>res = calculate(arr);
+   vector<vector<int>>ans = factors(res);
+   printarr1d(res);
+   printarr2d(ans);
+}

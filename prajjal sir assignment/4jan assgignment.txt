@@ -1,0 +1,110 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int arr[5]={1,2,3,4,5};
+    for(auto it:arr){
+        cout<<it<<" ";
+    }
+}
+
+----------------------------------------------------------
+// Create an integer array arr of size 6 where only the first 3 elements are initialized to 10, 20, 30. What are the remaining elements initialized to ?
+#include <bits/stdc++.h>
+ using namespace std;
+
+int main() {
+   int arr[6]={10,20,30};
+   for(auto it:arr){
+    cout<<it<<" ";
+   }
+}
+----------------------------------------------------------
+// Declare and initialize a character array chars with the string "Hello" and print each character individually.
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+ char arr[5]={'H','e','l','l','o'};
+ for(auto it:arr){
+    cout<<it<<" ";
+ }
+}
+------------------------------------------------------
+// Take an integer n from the user and initialize an integer array of size n with the squares of the numbers 1 to n
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+ int n,num;
+ cout<<"Enter the Size of aray :" ;
+ cin>>n;
+ int arr[n]  ;
+ for(int i=0;i<n;i++){
+    cin>>num;
+    arr[i]=num*num;
+ }
+ for(auto it:arr){
+    cout<<it<<" ";
+ }
+}
+----------------------------------------------------------
+// Create an integer array arr of size 5 and initialize it with numbers 5, 10, 15, 20, 25 using a loop.
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+ int arr[5];
+ cout<<"enter the elements of array : \n";
+ for(int i=0;i<5;i++)   {
+    cin>>arr[i];
+ }
+ for(auto it:arr){
+    cout<<it<<" ";
+ }
+}
+--------------------------------------------------------
+// Create an integer array arr of size 5 and initialize all elements to - 1 in a single line
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+ int arr[5] = {-1,-1,-1,-1,-1}  ;
+ for(auto it:arr){
+    cout<<it<<" ";
+ }
+}
+---------------------------------------------------------
+// Initialize an array arr2 by copying the values from another array arr1 which contains{1, 2, 3, 4, 5}.
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+ int arr[5]   ={1,2,3,4,5};
+ int arr1[5];
+ for(int i=0;i<5;i++){
+    arr1[i]=arr[i];
+ }
+ for(auto it:arr1){
+    cout<<it<<" ";
+ }
+}
+--------------------------------------------------------
+// Write a function that takes an integer n and returns an integer array of size n initialized with the value 42 in each position.
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+ int n;
+ cout<<"enter the size of array: ";
+ cin>>n;
+ int arr[n];
+ for(int i=0;i<n;i++){
+    arr[i]=42;
+ }
+ for(auto it:arr){
+    cout<<it<<" ";
+ }
+}
+-----------------------------------------------------------
